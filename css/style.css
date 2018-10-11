@@ -81,6 +81,14 @@ hr {
   min-height: 100%;
 }
 
+.logo {
+  position: fixed;
+  bottom: 25%;
+  width: 100%;
+  padding: 30px;
+  opacity: 0.65;
+}
+
 .content {
   position: fixed;
   bottom: 0;
