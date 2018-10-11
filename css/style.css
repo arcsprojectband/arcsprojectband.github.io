@@ -82,7 +82,8 @@ hr {
 }
 
 .logo {
-  bottom: 0;
+  left: 0;
+  bottom: 5%;
   padding-top: 7.5%;
   opacity: 0.65;
 }
