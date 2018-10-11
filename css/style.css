@@ -45,21 +45,50 @@ hr {
   border: 0;
 }
 
+.backing {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+
 #backgroundVideo {
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%; 
     min-height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-texture {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  background: url("../images/background-texture.png") center center;
+  background-repeat: repeat;
+  z-index: 1;
+  opacity: 0.3;
+  mix-blend-mode: soft-light; }
+
+#backgroundImage {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
 }
 
 .content {
   position: fixed;
   bottom: 0;
+  left: 0;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 100%;
-  padding: 20px;
+  padding: 30px;
 }
 
 #mainButton {
