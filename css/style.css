@@ -85,7 +85,6 @@ hr {
   position: fixed;
   bottom: 25%;
   width: 100%;
-  padding: 30px;
   opacity: 0.65;
 }
 
@@ -96,12 +95,14 @@ hr {
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 100%;
-  padding: 30px;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 #mainButton {
-  width: 200px;  
-  padding: 10px;
+  width: 12.5%;  
+  height: 10%;
+  padding: 1%;
   background: #DDBB35;
   border: 2px #DDBB35 solid;
   color: #fff;
@@ -111,4 +112,33 @@ hr {
 #mainButton:hover {
   background: #ddd;
   color: black;
+}
+
+.shake {
+  animation: shake 30.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: scale(1.0) translate(0.5px, 0.5px) rotate(0deg); }
+  5% { transform: scale(1.025) translate(0.5px, 0.5px) rotate(0deg); }
+  10% { transform: scale(1.04) translate(-0.5px, -1px) rotate(-1deg); }
+  15% { transform: scale(1.045) translate(-0.5px, -1px) rotate(-1deg); }
+  20% { transform: scale(1.04) translate(-1.5px, 0px) rotate(1deg); }
+  25% { transform: scale(1.03) translate(-1.5px, 0px) rotate(1deg); }
+  30% { transform: scale(1.05) translate(1.5px, 1px) rotate(0deg); }
+  35% { transform: scale(1.03) translate(1.5px, 1px) rotate(0deg); }
+  40% { transform: scale(1.025) translate(0.5px, -0.5px) rotate(1deg); }
+  45% { transform: scale(1.034) translate(0.5px, -0.5px) rotate(1deg); }
+  50% { transform: scale(1.04) translate(-0.5px, 1px) rotate(-1deg); }
+  55% { transform: scale(1.03) translate(-0.5px, 1px) rotate(-1deg); }
+  60% { transform: scale(1.023) translate(-1.5px, -0.5px) rotate(0deg); }
+  65% { transform: scale(1.04) translate(-1.5px, -0.5px) rotate(0deg); }
+  70% { transform: scale(1.03) translate(1.5px, 0.5px) rotate(-1deg); }
+  75% { transform: scale(1.03) translate(1.5px, 0.5px) rotate(-1deg); }
+  80% { transform: scale(1.04) translate(-0.5px, -0.5px) rotate(1deg); }
+  85% { transform: scale(1.023) translate(-0.5px, -0.5px) rotate(1deg); }
+  90% { transform: scale(1.02) translate(0.5px, 1px) rotate(0deg); }
+  95% { transform: scale(1.03) translate(0.5px, 1px) rotate(0deg); }
+  100% { transform: scale(1.018) translate(0.5px, -1px) rotate(-1deg); }
 }
