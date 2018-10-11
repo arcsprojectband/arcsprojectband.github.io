@@ -21,7 +21,7 @@ body {
   font-family: "Akzidenz Grotesk BQ Medium", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   color:#0e0e0e;
-  background: #efefef;
+  background: #ffffff;
 }
 
 button {
@@ -29,6 +29,14 @@ button {
   letter-spacing: 3px;
   font-family: "schmalfettecpregular", Helvetica, Arial, sans-serif;
   line-height: 1.5;
+}
+
+.shop-format {
+  font-size: 100%;
+  font-weight: 40%;
+  font-family: "arialblack", sans-serif;
+  line-height: 1.6em;  
+  text-transform: uppercase;
 }
 
 .roundimg {
@@ -84,6 +92,15 @@ hr {
 .logo {
   padding-top: 7.5%;
   opacity: 0.65;
+}
+
+.shop-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 .content {
