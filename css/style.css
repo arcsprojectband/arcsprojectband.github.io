@@ -82,9 +82,7 @@ hr {
 }
 
 .logo {
-  position: fixed;
-  bottom: 25%;
-  width: 100%;
+  padding-top: 7.5%;
   opacity: 0.65;
 }
 
