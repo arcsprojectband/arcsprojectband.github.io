@@ -1,28 +1,77 @@
+
+/* ===== fonts ==== */
+
+@font-face {
+  font-family: 'Akzidenz Grotesk BQ Medium';
+  src: url("../fonts/Akzidenz-Grotesk-BQ-Medium_2839.eot");
+  src: url("../fonts/Akzidenz-Grotesk-BQ-Medium_2839d41d.eot?#iefix") format("embedded-opentype"), url("../fonts/Akzidenz-Grotesk-BQ-Medium_2839.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'schmalfettecpregular';
+  src: url("../fonts/counterpoint_type_studio_-_schmalfettecp-webfont.woff2") format("woff2"), url("../fonts/counterpoint_type_studio_-_schmalfettecp-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/* ===== base ===== */
+
+body {
+  font-size: 100%;
+  font-family: "Akzidenz Grotesk BQ Medium", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color:#0e0e0e;
+  background: #efefef;
+}
+
+button {
+  font-size: 150%;
+  letter-spacing: 3px;
+  font-family: "schmalfettecpregular", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
 .roundimg {
 	border-radius: 15px;
 }
 
-@font-face {
-    font-family: Roboto;
-    src: url(https://fonts.googleapis.com/css?family=Roboto);
-}
+img {
+  pointer-events: none; }
 
-body {
-  font-family: 'Roboto', sans-serif; 
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
-  color:#0e0e0e;
-  background: #efefef;
-}
-  
 hr {
-    background-color: #afafaf;
-    height: 1px;
-    width: 50%;
-    border: 0;
+  background-color: #afafaf;
+  height: 1px;
+  width: 50%;
+  border: 0;
 }
 
-a {
-  color: teal
+#backgroundVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#mainButton {
+  width: 200px;  
+  padding: 10px;
+  background: #DDBB35;
+  border: 2px #DDBB35 solid;
+  color: #fff;
+  cursor: pointer;
+}
+
+#mainButton:hover {
+  background: #ddd;
+  color: black;
 }

@@ -2,27 +2,37 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Arcs Project</title>
 
-<title>bingnut</title>
-<link rel="icon" type="image/png" href="./images/arcs-icon.png">
-<link rel="stylesheet" href="./css/style.css">
-<meta name="description" content="bingnut's homepage." />
-<meta name="keywords" content="bingnut" />
-<meta name="author" content="bingus" />
+  <meta name="description" content="The Arcs Project — On Tour Now!">
+  
+  <link rel="icon" type="image/png" href="./images/arcs-icon.png">
 
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href=".css/normalize.css">
+
+  <script src=".js/modernizr-custom.js"></script>
 </head>
 
 <body>
-<pineapples align="center">
-  
-  
-  <!-- | ======================================= MAIN SECTION ======================================= | -->
-  
-  
-<h1>uh? here's a picture of keith haring art.</h1>
-<h1><img class="roundimg" src="./images/arcs-project.png" alt="" width="960px" height="540px"></h1>
 
-</pineapples>
+  <video autoplay muted loop id="backgroundVideo">
+    <source src="./video/kaliuchis-isolation--bluesilk.mp4" type="video/mp4">
+  </video>
+  
+  <main align="center" class="content">  
+      <h1>The Δrcs Project</h1>
+      <div class="row">
+          <button id="mainButton" onclick="location.href='./music.html'" type="button">Music</button>
+          <button id="mainButton" onclick="location.href='./about.html'" type="button">About</button>
+          <button id="mainButton" onclick="location.href='./tour.html'" type="button">Tour</button>
+          <button id="mainButton" onclick="location.href='./shop.html'" type="button">Shop</button>
+          <button id="mainButton" onclick="location.href='./blog.html'" type="button">Blog</button>
+      </div>
+  </main>
+
 </body>
 
 </html>
