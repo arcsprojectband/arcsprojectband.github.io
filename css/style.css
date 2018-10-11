@@ -100,6 +100,7 @@ hr {
 }
 
 #mainButton {
+  display: inline-block;
   width: 15.5%;  
   height: 10%;
   padding: 1%;
