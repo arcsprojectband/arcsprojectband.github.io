@@ -98,6 +98,22 @@ hr {
 }
 
 #mainButton {
+  width: 15.5%;
+  height: 7vh;
+  padding-left: 1.5vh;
+  padding-right: 1.5vh;
+  background: #DDBB35;
+  border: 0.2vh #DDBB35 solid;
+  color: #fff;
+  cursor: pointer;
+}
+
+#mainButton:hover {
+  background: #ddd;
+  color: black;
+}
+
+#mainButton-mobile {
   display: inline-block;
   height: 8vh;
   padding-left: 1.5vh;
@@ -108,7 +124,7 @@ hr {
   cursor: pointer;
 }
 
-#mainButton:hover {
+#mainButton-mobile:hover {
   background: #ddd;
   color: black;
 }
