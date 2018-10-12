@@ -90,7 +90,7 @@ hr {
   z-index: -2;
 }
 
-.shop-content {
+.content {
   top: 0;
   left: 0;
   width: 100%;
@@ -100,7 +100,7 @@ hr {
   -webkit-transform: translate3d(0,0,0);
 }
 
-.content {
+.main-content {
   position: fixed;
   bottom: 0;
   left: 0;
