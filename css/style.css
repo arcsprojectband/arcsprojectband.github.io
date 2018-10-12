@@ -21,10 +21,7 @@ body {
   font-family: "Akzidenz Grotesk BQ Medium", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   color:#0e0e0e;
-  background: #ffffff;
-  background-image: url("../images/back.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background: #ffffff;  
 }
 
 button {
