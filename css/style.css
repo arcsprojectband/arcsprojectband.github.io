@@ -22,7 +22,7 @@ body {
   line-height: 1.5;
   color:#0e0e0e;
   background: #ffffff;
-  background-image: url("https://arcsprojectband.github.io/images/back.png");
+  background-image: url("../images/back.png");
 }
 
 button {
