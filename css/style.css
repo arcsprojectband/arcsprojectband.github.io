@@ -22,9 +22,9 @@ body {
   line-height: 1.5;
   color:#0e0e0e;
   background: #ffffff;
-  background-image: url("../images/back.png");
-  background-repeat: no-repeat, repeat;
-  background-size: 100%;
+  background-image: url("../images/back.png"); 
+  background-repeat: repeat-y;
+  background-size: 150%;  
 }
 
 button {
