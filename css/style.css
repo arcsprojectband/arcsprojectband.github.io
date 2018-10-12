@@ -17,7 +17,7 @@
 /* ===== base ===== */
 
 body {
-  font-size: 100%;
+  font-size: 125%;
   font-family: "Akzidenz Grotesk BQ Medium", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   color:#0e0e0e;
@@ -29,14 +29,6 @@ button {
   letter-spacing: 3px;
   font-family: "schmalfettecpregular", Helvetica, Arial, sans-serif;
   line-height: 1.5;
-}
-
-.shop-format {
-  font-size: 100%;
-  font-weight: 40%;
-  font-family: "arialblack", sans-serif;
-  line-height: 1.6em;  
-  text-transform: uppercase;
 }
 
 .roundimg {
@@ -95,7 +87,6 @@ hr {
 }
 
 .shop-content {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -119,14 +110,15 @@ hr {
   height: 7vh;
   padding-left: 1.5vh;
   padding-right: 1.5vh;
-  background: #DDBB35;
-  border: 0.2vh #DDBB35 solid;
-  color: #fff;
+  background: #f1dd38;
+  border: 0.2vh #f1dd38 solid;
+  color: #000;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 #mainButton:hover {
-  background: #ddd;
+  background: #efefef;
   color: black;
 }
 
@@ -135,14 +127,15 @@ hr {
   height: 8vh;
   padding-left: 1.5vh;
   padding-right: 1.5vh;
-  background: #DDBB35;
-  border: 0.2vh #DDBB35 solid;
-  color: #fff;
+  background: #E8B541;
+  border: 0.2vh #E8B541 solid;
+  color: #000;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 #mainButton-mobile:hover {
-  background: #ddd;
+  background: #efefef;
   color: black;
 }
 
