@@ -66,6 +66,7 @@ hr {
     min-width: 100%; 
     min-height: 100%;
     z-index: -3;
+    -webkit-transform: translate3d(0,0,0);
     overflow: hidden;
     filter: saturate(45%);    
 }
@@ -79,6 +80,7 @@ hr {
   background: url("../images/background-texture.png") center center;
   background-repeat: repeat;
   z-index: -1;
+  -webkit-transform: translate3d(0,0,0);
   opacity: 0.3;
   mix-blend-mode: soft-light; }
 
@@ -86,6 +88,7 @@ hr {
   padding-top: 7.5%;
   opacity: 0.65;
   z-index: -2;
+  -webkit-transform: translate3d(0,0,0);
 }
 
 .shop-content {
