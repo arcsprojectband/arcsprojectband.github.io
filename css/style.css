@@ -148,7 +148,7 @@ hr {
   color: black;
 }
 
-#shopButton {
+#headerButton {
   width: 15.5%;
   height: 7vh;
   padding-left: 1.5vw;
@@ -160,12 +160,12 @@ hr {
   text-transform: uppercase;
 }
 
-#shopButton:hover {
+#headerButton:hover {
   background: #ED1C25;
   color: black;
 }
 
-#shopButton-mobile {
+#headerButton-mobile {
   display: inline-block;
   height: 8vh;
   padding-left: 1.5vw;
@@ -177,7 +177,41 @@ hr {
   text-transform: uppercase;
 }
 
-#shopButton-mobile:hover {
+#headerButton-mobile:hover {
+  background: #ED1C25;
+  color: black;
+}
+
+#headerButton-active {
+  width: 15.5%;
+  height: 7vh;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  background: #ED1C25;
+  border: 0.2vh #ED1C25 solid;
+  color: #000;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#headerButton-active:hover {
+  background: #ED1C25;
+  color: black;
+}
+
+#headerButton-active-mobile {
+  display: inline-block;
+  height: 8vh;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  background: #f1dd38;
+  border: 0.2vh #f1dd38 solid;
+  color: #000;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#headerButton-active-mobile:hover {
   background: #ED1C25;
   color: black;
 }
