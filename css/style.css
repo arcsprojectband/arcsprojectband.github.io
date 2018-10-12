@@ -80,7 +80,9 @@ hr {
   background-repeat: repeat;
   z-index: -1;
   opacity: 0.3;
-  mix-blend-mode: soft-light; }
+  mix-blend-mode: soft-light;
+  overflow: hidden;
+}
 
 .logo {
   padding-top: 7.5%;
