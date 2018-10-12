@@ -133,10 +133,10 @@ hr {
 #mainButton-mobile {
   display: inline-block;
   height: 8vh;
-  padding-left: 0.1vw;
-  padding-right: 0.1vw;
-  background: #E8B541;
-  border: 0.2vh #E8B541 solid;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  background: #f1dd38;
+  border: 0.2vh #f1dd38 solid;
   color: #000;
   cursor: pointer;
   text-transform: uppercase;
@@ -169,8 +169,8 @@ hr {
   height: 8vh;
   padding-left: 1.5vw;
   padding-right: 1.5vw;
-  background: #E8B541;
-  border: 0.2vh #E8B541 solid;
+  background: #f1dd38;
+  border: 0.2vh #f1dd38 solid;
   color: #000;
   cursor: pointer;
   text-transform: uppercase;
