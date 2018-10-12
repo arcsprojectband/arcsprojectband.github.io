@@ -69,9 +69,7 @@ hr {
     right: 0;
     bottom: 0;
     min-width: 100vw; 
-    max-width: 100vw; 
     min-height: 100vh;
-    max-height: 100vh;
     z-index: -3;
     filter: saturate(45%);    
 }
