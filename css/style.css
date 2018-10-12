@@ -35,6 +35,14 @@ button {
 	border-radius: 15px;
 }
 
+.zoom {
+  transition: transform .2s;  
+}
+
+.zoom:hover {
+  transform: scale(1.05);
+}
+
 img {
   pointer-events: none; }
 
@@ -136,6 +144,40 @@ hr {
 
 #mainButton-mobile:hover {
   background: #efefef;
+  color: black;
+}
+
+#shopButton {
+  width: 15.5%;
+  height: 7vh;
+  padding-left: 1.5vh;
+  padding-right: 1.5vh;
+  background: #f1dd38;
+  border: 0.2vh #f1dd38 solid;
+  color: #000;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#shopButton:hover {
+  background: #ED1C25;
+  color: black;
+}
+
+#shopButton-mobile {
+  display: inline-block;
+  height: 8vh;
+  padding-left: 1.5vh;
+  padding-right: 1.5vh;
+  background: #E8B541;
+  border: 0.2vh #E8B541 solid;
+  color: #000;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#shopButton-mobile:hover {
+  background: #ED1C25;
   color: black;
 }
 
