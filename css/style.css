@@ -47,9 +47,9 @@ img {
   pointer-events: none; }
 
 hr {
-  background-color: #afafaf;
-  height: 1px;
-  width: 50%;
+  background-color: #101010;
+  height: 2px;
+  width: 90%;
   border: 0;
 }
 
