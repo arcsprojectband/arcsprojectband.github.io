@@ -66,7 +66,7 @@ h5 {
 }
 
 body {
-  background-image: url("./images/about-background.png"); 
+  background-image: url("REMOVE_ME./images/about-background.png"); 
   background-repeat: no-repeat;
   background-size: cover;    
 }
@@ -75,17 +75,27 @@ body {
 
 <body>
 
+  <div>
+    <video playsinline webkit-playsinline autoplay muted loop id="backgroundVideo" poster="./video/blue-silk.jpg">
+      <source src="./video/blue-silk.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-texture"></div> 
+    </div>
+
   <header align="center" class="shop-content">  
 
-    <a href="index.html">
-      <nav class="show-mobile">
-        <img src="./images/arcs-project-transparent.png" width="40%" height="40%">
-      </nav>
+    <div style="opacity: 0.75; z-index: -2;">
+      <a href="index.html">
+        <nav class="show-mobile">
+          <img src="./images/arcs-project-transparent.png" width="40%" height="40%">
+        </nav>
 
-      <nav class="hide-mobile">
-        <img src="./images/arcs-project-transparent.png" width="10%" height="10%">
-      </nav>
-    </a>
+        <nav class="hide-mobile">
+          <img src="./images/arcs-project-transparent.png" width="10%" height="10%">
+        </nav>
+      </a>
+    </div>
 
       <div class="row">
         <nav class="show-mobile">          
@@ -107,7 +117,7 @@ body {
 
   </header>
 
-  <main style="margin: auto 15%;" align="left">
+  <main style="margin: auto 15%; background-color: #efefef; border: 2vh #efefef solid;" align="left">
     <h1>Biography</h1>    
     <h5>A Montreal-born Grenadian-Canadian, Kaia Kater grew up between two worlds: one her family’s deep ties to folk music; the other the years she spent soaking up Appalachian music in West Virginia. Her old-time banjo-picking skills, deft arrangements, and songwriting abilities have landed her in the spotlight in North America and the UK, garnering critical acclaim from outlets such as NPR, CBC Radio, Rolling Stone, BBC Music, and No Depression
         

@@ -65,17 +65,27 @@ h5 {
 
 <body>
 
+  <div>
+    <video playsinline webkit-playsinline autoplay muted loop id="backgroundVideo" poster="./video/blue-silk.jpg">
+      <source src="./video/blue-silk.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-texture"></div> 
+  </div>
+
   <header align="center" class="shop-content">  
 
-    <a href="index.html">
-      <nav class="show-mobile">
-        <img src="./images/arcs-project-transparent.png" width="40%" height="40%">
-      </nav>
+    <div style="opacity: 0.75; z-index: -2;">
+      <a href="index.html">
+        <nav class="show-mobile">
+          <img src="./images/arcs-project-transparent.png" width="40%" height="40%">
+        </nav>
 
-      <nav class="hide-mobile">
-        <img src="./images/arcs-project-transparent.png" width="10%" height="10%">
-      </nav>
-    </a>
+        <nav class="hide-mobile">
+          <img src="./images/arcs-project-transparent.png" width="10%" height="10%">
+        </nav>
+      </a>
+    </div>
 
       <div class="row">
         <nav class="show-mobile">
@@ -97,7 +107,7 @@ h5 {
 
   </header>
 
-  <main align="center">
+  <main style="margin: auto 15%; background-color: #efefef; border: 2vh #efefef solid;" align="center">
     <div class="row-shop">
 
         <div class="column zoom correct-mobile">

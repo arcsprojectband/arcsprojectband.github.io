@@ -65,7 +65,7 @@ hr {
     bottom: 0;
     min-width: 100%; 
     min-height: 100%;
-    z-index: -1;
+    z-index: -3;
     overflow: hidden;
     filter: saturate(45%);    
 }
@@ -78,13 +78,14 @@ hr {
   top: 0px;
   background: url("../images/background-texture.png") center center;
   background-repeat: repeat;
-  z-index: 1;
+  z-index: -1;
   opacity: 0.3;
   mix-blend-mode: soft-light; }
 
 .logo {
   padding-top: 7.5%;
   opacity: 0.65;
+  z-index: -2;
 }
 
 .shop-content {
