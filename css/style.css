@@ -67,6 +67,7 @@ hr {
     min-height: 100%;
     z-index: -1;
     overflow: hidden;
+    filter: saturate(45%);    
 }
 
 .video-texture {
@@ -80,14 +81,6 @@ hr {
   z-index: 1;
   opacity: 0.3;
   mix-blend-mode: soft-light; }
-
-#backgroundImage {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-}
 
 .logo {
   padding-top: 7.5%;
@@ -205,8 +198,8 @@ hr {
   height: 8vh;
   padding-left: 1.5vw;
   padding-right: 1.5vw;
-  background: #f1dd38;
-  border: 0.2vh #f1dd38 solid;
+  background: #ED1C25;
+  border: 0.2vh #ED1C25 solid;
   color: #000;
   cursor: pointer;
   text-transform: uppercase;
