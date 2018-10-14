@@ -267,3 +267,34 @@ hr {
     display: block;
   }
 }
+
+#ticketButton {
+  width: 110%;  
+  height: 7vh;
+  background: #f1dd38;
+  border: 0.0vh #f1dd38 solid;
+  color: #000;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#ticketButton:hover {
+  background: #ED1C25;
+  color: black;
+}
+
+#ticketButton-mobile {
+  width: 45vw;
+  height: 8vh;
+  margin: 0.75vh;
+  background: #f1dd38;
+  border: 0.0vh #f1dd38 solid;
+  color: #000;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#ticketButton-mobile:hover {
+  background: #ED1C25;
+  color: black;
+}
