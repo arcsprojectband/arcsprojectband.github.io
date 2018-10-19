@@ -51,6 +51,10 @@ button {
   transform: scale(1.05);
 }
 
+.recolor_hover:hover {
+  color: #ED1C25;
+}
+
 img {
   pointer-events: none; }
 
