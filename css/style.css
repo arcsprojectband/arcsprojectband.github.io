@@ -35,8 +35,12 @@ button {
   line-height: 1.5;
 }
 
+.roundimg_sm {
+	border-radius: 5%;
+}
+
 .roundimg {
-	border-radius: 15px;
+	border-radius: 10%;
 }
 
 .zoom {
