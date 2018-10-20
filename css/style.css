@@ -20,6 +20,10 @@
   width: device-width ;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 125%;
   font-family: "Akzidenz Grotesk BQ Medium", Helvetica, Arial, sans-serif;

@@ -14,6 +14,7 @@
   <link rel="stylesheet" href=".css/normalize.css">
 
   <script src=".js/modernizr-custom.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <style>
@@ -82,7 +83,7 @@ a {
   }
 }
 
-#individual-box {
+#individual_bio {
   display: inline-block;
   border-radius: 2vh;
   padding: 2vh;
@@ -147,19 +148,19 @@ a {
 
         <div class="column correct-mobile">
           <nav class="hide-mobile" align="left">
-            <img class="roundimg_sm" src="./images/members/colby-brookshire.jpg" style="width:66.66%">
-            <h4>Colby Brookshire</h4>
-            <h5>Guitarist</h5>
+            <img id="individual_image" class="roundimg_sm" src="./images/members/colby-brookshire.jpg" style="width:66.66%">
+            <h4 id="individual_name">Colby Brookshire</h4>
+            <h5 id="individual_role">Guitarist</h5>
           </nav>
           <nav class="show-mobile" align="center">
-            <img class="roundimg_sm" src="./images/members/colby-brookshire.jpg" style="width:100%">
-            <h4>Colby Brookshire</h4>
-            <h5>Guitarist</h5>
+            <img id="individual_image" class="roundimg_sm" src="./images/members/colby-brookshire.jpg" style="width:100%">
+            <h4 id="individual_name">Colby Brookshire</h4>
+            <h5 id="individual_role">Guitarist</h5>
           </nav>
         </div>  
 
         <div class="column correct-mobile_individual">
-          <h4 id="individual-box" style="margin: auto; text-transform: none;">Seminole High School student, Colby Brookshire is the Guitarist for Δrcs Project blah blah blah... Nullam nulla massa, ultrices id sollicitudin eget, sollicitudin nec mi. Fusce lectus lacus, egestas a feugiat vitae, tempor sit amet justo. Sed nec sodales sem. Donec pellentesque sed lectus at sollicitudin. Nulla vulputate neque a lectus pharetra fringilla. Mauris vel magna feugiat, rutrum metus tempor, accumsan nisl. Ut consectetur mauris vel tempor ornare. Aliquam imperdiet ex id aliquet varius. Nam dapibus laoreet erat. Donec id elit massa. Etiam tortor arcu, pellentesque in diam ut, posuere placerat purus. Integer vel odio pellentesque, laoreet lacus a, ultrices ligula. Sed at eleifend diam. Etiam suscipit mi sit amet massa placerat, vel blandit dolor molestie. Nullam vel urna bibendum, lacinia quam nec, posuere lectus.</h4>        
+          <h4 id="individual_bio" style="margin: auto; text-transform: none;">< INDIVIDUAL BIO ></h4>        
         </div>
       </div>
 
@@ -227,5 +228,81 @@ a {
   </main>
 
 </body>
+
+<script>
+
+  window.onload = function()
+  {
+    colby_brookshire();
+  };
+
+  function andrew_jagos()
+  {
+    document.getElementById("individual_image").src="./images/members/andrew-jagos.jpg";
+    document.getElementById("individual_name").innerText = "Andrew Jagos";
+    document.getElementById("individual_role").innerText = "Drummer";
+    document.getElementById("individual_bio").innerText = "< ANDREW JAGOS BIO >";
+  }
+
+  function riley_kane()
+  {
+    document.getElementById("individual_image").src="./images/members/riley-kane.jpg";
+    document.getElementById("individual_name").innerText = "Riley Kane";
+    document.getElementById("individual_role").innerText = "Bassist";
+    document.getElementById("individual_bio").innerText = "< RILEY KANE BIO >";
+  }
+
+  function colby_brookshire()
+  {
+    document.getElementById("individual_image").src="./images/members/colby-brookshire.jpg";
+    document.getElementById("individual_name").innerText = "Colby Brookshire";
+    document.getElementById("individual_role").innerText = "Guitarist";
+    document.getElementById("individual_bio").innerText = "< COLBY BROOKSHIRE BIO >";
+  }
+
+  function sarah_suarez()
+  {
+    document.getElementById("individual_image").src="./images/members/sarah-suarez.jpg";
+    document.getElementById("individual_name").innerText = "Sarah Suarez";
+    document.getElementById("individual_role").innerText = "Singer";
+    document.getElementById("individual_bio").innerText = "< SARAH SUAREZ BIO >";
+  }
+  
+  function abby_jagos()
+  {
+    document.getElementById("individual_image").src="./images/members/abby-jagos.jpg";
+    document.getElementById("individual_name").innerText = "Abby Jagos";
+    document.getElementById("individual_role").innerText = "Keyboardist";
+    document.getElementById("individual_bio").innerText = "< ABBY JAGOS BIO >";
+  }
+
+  $(document).ready(function()
+  {
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 250, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+      } // End if
+    });
+  });
+  
+  
+</script>
 
 </html>
