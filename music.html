@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Δrcs Project — About</title>
+  <title>The Δrcs Project — Music</title>
 
   <meta name="description" content="The Δrcs Project — On Tour Now!">
   
@@ -37,6 +37,10 @@ h5 {
     box-sizing: border-box;
 }
 
+hr {
+  width: 100%;
+}
+
 a {
   color:inherit;
   text-decoration: none !important;
@@ -48,12 +52,12 @@ a {
   padding: 5px;
 }
 
-.row-about {
+.row-music {
   width: 85%;
   margin: 0 auto;
 }
 
-.row-about::after {
+.row-music::after {
     content: "";
     clear: both;
     display: table;
@@ -67,19 +71,7 @@ a {
 
 @media only screen and (min-device-width: 481px) {  
   .correct-mobile {
-    width: 33.33%;
-  }
-}
-
-@media only screen and (max-device-width: 480px) {
-  .correct-mobile_individual {    
-    width: 100%;
-  }  
-}
-
-@media only screen and (min-device-width: 481px) {  
-  .correct-mobile_individual {
-    width: 66.66%;
+    width: 50%;
   }
 }
 
@@ -118,17 +110,17 @@ a {
 
       <div class="row">
         <nav class="show-mobile">          
-          <button id="headerButton-active-mobile" onclick="location.href='./about.html'" type="button">About</button>
+          <button id="headerButton-mobile" onclick="location.href='./about.html'" type="button">About</button>
           <button id="headerButton-mobile" onclick="location.href='./tour.html'" type="button">Tour</button>
-          <button id="headerButton-mobile" onclick="location.href='./music.html'" type="button">Music</button>
+          <button id="headerButton-active-mobile" onclick="location.href='./music.html'" type="button">Music</button>
           <button id="headerButton-mobile" onclick="location.href='./shop.html'" type="button">Shop</button>
           <button id="headerButton-mobile" onclick="location.href='./blog.html'" type="button">Blog</button>
         </nav>
 
         <nav class="hide-mobile">
-          <button id="headerButton-active" onclick="location.href='./about.html'" type="button">About</button>
+          <button id="headerButton" onclick="location.href='./about.html'" type="button">About</button>
           <button id="headerButton" onclick="location.href='./tour.html'" type="button">Tour</button>
-          <button id="headerButton" onclick="location.href='./music.html'" type="button">Music</button>
+          <button id="headerButton-active" onclick="location.href='./music.html'" type="button">Music</button>
           <button id="headerButton" onclick="location.href='./shop.html'" type="button">Shop</button>
           <button id="headerButton" onclick="location.href='./blog.html'" type="button">Blog</button>
         </nav>
@@ -136,194 +128,73 @@ a {
 
   </header>
 
-  <main style="margin: auto 5%; background-color: #efefef; border: 2vh #efefef solid;" align="left">
-    <h1>Biography</h1>    
-    <h4 style="margin: auto; text-transform: none;">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus lectus, varius eget nibh ac, pellentesque ornare nunc. Aenean elementum auctor aliquam. Integer nec tempor odio. Duis ac libero venenatis, tempus lectus in, imperdiet sapien. Etiam blandit ultrices nunc sed sollicitudin. Vivamus dictum ligula quis turpis tempus cursus. Fusce eget volutpat nulla. Nunc cursus orci sit amet venenatis dictum. Phasellus quis diam sem. Donec pulvinar diam non nibh gravida eleifend. Vestibulum imperdiet nisi efficitur, finibus dolor sit amet, sodales felis. Ut nec mollis neque, non luctus elit. Mauris tincidunt a velit et egestas. Nulla metus nibh, luctus eget nibh et, placerat ornare augue. Aliquam congue velit velit, et ullamcorper enim aliquam sit amet.
-    </h4>
+  <main style="margin: auto 5%; background-color: #efefef; border: 2vh #efefef solid;" align="right">
+    <h1>Album Name Here (Fake)</h1>        
 
-      <div id="individual"></div><br><hr><br>
+      <div class="row-music" align="left">
 
-      <div class="row-about" align="left">
+        <nav class="hide-mobile">
 
-        <div class="column correct-mobile">
-          <nav class="hide-mobile" align="left">
-            <img id="individual_image" class="roundimg_sm" src="./images/members/colby-brookshire.jpg" style="width:66.66%">
-            <h4 id="individual_name">Colby Brookshire</h4>
-            <h5 id="individual_role">Guitarist</h5>
-          </nav>
-          <nav class="show-mobile" align="center">
-            <img id="individual_image_mobile" class="roundimg_sm" src="./images/members/colby-brookshire.jpg" style="width:100%">
-            <h4 id="individual_name_mobile">Colby Brookshire</h4>
-            <h5 id="individual_role_mobile">Guitarist</h5>
-          </nav>
-        </div>  
+        <hr>
 
-        <div class="column correct-mobile_individual">
-          <h4 id="individual_bio" style="margin: auto; text-transform: none;">
-            Colby Brookshire has been the guitarist in this band since 2014. Other than guitar, he plays Bass and Keys on occasion. His guitar style is heavily influenced by Led Zeppelin, Queen, Joe Satriani, and Pink Floyd.
-          </h4>        
-        </div>
-      </div>
+        <div align="left" class="column correct-mobile">
+          <h4>Sycamore Tree</h4>
+          <a href="http://venue.tlaphilly.com/" target="_blank"><h5 style="color: #ED1C25;">Theater of Living Arts</h5></a>
+        </div>   
 
-      <br><hr><br>
+        <div align="right" class="column correct-mobile">
+          <h4 style="display: inline-block">Philadelphia, PA</h4>
+          <h5 style="display: inline-block; padding-left: 2.5%; padding-right: 1.5%;"><button id="ticketButton" onclick="location.href='./SONG_BUY_LOCATION.html'" type="button">$0.99</button></h5>
+        </div>   
 
-      <div class="row-about" align="center">
+        <hr>
 
-        <div class="column zoom correct-mobile recolor_hover"><a href="#individual" onclick="andrew_jagos();">
-          <nav class="hide-mobile">
-            <img class="roundimg" src="./images/members/andrew-jagos.jpg" style="width:66.66%">
-          </nav>
-          <nav class="show-mobile">
-            <img class="roundimg" src="./images/members/andrew-jagos.jpg" style="width:100%">
-          </nav>
-          <h4>Andrew Jagos</h4>
-          <h5>Drummer</h5>
-        </a></div>    
+        <div align="left" class="column correct-mobile">
+          <h4>Call Me</h4>
+          <a href="http://www.20monroelive.com/" target="_blank"><h5 style="color: #ED1C25;">20 Monroe Live</h5></a>
+        </div>   
 
-        <div class="column zoom correct-mobile recolor_hover"><a href="#individual" onclick="riley_kane();">
-          <nav class="hide-mobile">
-            <img class="roundimg" src="./images/members/riley-kane.jpg" style="width:66.66%">
-          </nav>
-          <nav class="show-mobile">
-            <img class="roundimg" src="./images/members/riley-kane.jpg" style="width:100%">
-          </nav>
-          <h4>Riley Kane</h4>
-          <h5>Bassist</h5>
-        </a></div>    
+        <div align="right" class="column correct-mobile">
+          <h4 style="display: inline-block">Grand Rapids, MI</h4>
+          <h5 style="display: inline-block; padding-left: 2.5%; padding-right: 1.5%;"><button id="ticketButton" onclick="location.href='./SONG_BUY_LOCATION.html'" type="button">$0.99</button></h5>
+        </div>     
 
-        <div class="column zoom correct-mobile recolor_hover"><a href="#individual" onclick="colby_brookshire();">
-          <nav class="hide-mobile">
-            <img class="roundimg" src="./images/members/colby-brookshire.jpg" style="width:66.66%">
-          </nav>
-          <nav class="show-mobile">
-            <img class="roundimg" src="./images/members/colby-brookshire.jpg" style="width:100%">
-          </nav>
-          <h4>Colby Brookshire</h4>
-          <h5>Guitarist</h5>
-        </a></div>    
-        
-        <div class="column zoom correct-mobile recolor_hover"><a href="#individual" onclick="sarah_suarez();">
-          <nav class="hide-mobile">
-            <img class="roundimg" src="./images/members/sarah-suarez.jpg" style="width:66.66%">
-          </nav>
-          <nav class="show-mobile">
-            <img class="roundimg" src="./images/members/sarah-suarez.jpg" style="width:100%">
-          </nav>
-          <h4>Sarah Suarez</h4>
-          <h5>Singer</h5>
-        </a></div>    
+        <hr>
 
-        <div class="column zoom correct-mobile recolor_hover"><a href="#individual" onclick="abby_jagos();">
-          <nav class="hide-mobile">
-            <img class="roundimg" src="./images/members/abby-jagos.jpg" style="width:66.66%">
-          </nav>
-          <nav class="show-mobile">
-            <img class="roundimg" src="./images/members/abby-jagos.jpg" style="width:100%">
-          </nav>
-          <h4>Abby Jagos</h4>
-          <h5>Keyboardist</h5>
-        </a></div>      
+      </nav>
 
-    </div>
+      <nav class="show-mobile">
+
+        <hr>
+
+        <div align="left" class="column correct-mobile">
+          <h4>Sycamore Tree</h4>
+          <a href="http://venue.tlaphilly.com/" target="_blank"><h5 style="color: #ED1C25;">Theater of Living Arts</h5></a>
+          <h4>Philadelphia, PA</h4>
+        </div>   
+
+        <div align="center" class="column correct-mobile">
+          <h5 style="display: inline-block;"><button id="ticketButton-mobile" onclick="location.href='./TICKET_BUY_LOCATION.html'" type="button">Tickets</button></h5>
+        </div>   
+
+        <hr>
+
+        <div align="left" class="column correct-mobile">
+          <h4>Call Me</h4>
+          <a href="http://www.20monroelive.com/" target="_blank"><h5 style="color: #ED1C25;">20 Monroe Live</h5></a>
+          <h4>Grand Rapids, MI</h4>
+        </div>   
+
+        <div align="center" class="column correct-mobile">
+          <h5 style="display: inline-block;"><button id="ticketButton-mobile" onclick="location.href='./TICKET_BUY_LOCATION.html'" type="button">Tickets</button></h5>
+        </div>   
+
+        <hr>  
+
+      </nav>
       
   </main>
 
 </body>
-
-<script>
-
-  function andrew_jagos()
-  {
-    document.getElementById("individual_image").src="./images/members/andrew-jagos.jpg";
-    document.getElementById("individual_name").innerText = "Andrew Jagos";
-    document.getElementById("individual_role").innerText = "Drummer";
-    
-    document.getElementById("individual_image_mobile").src="./images/members/andrew-jagos.jpg";
-    document.getElementById("individual_name_mobile").innerText = "Andrew Jagos";
-    document.getElementById("individual_role_mobile").innerText = "Drummer";
-
-    var bio = "Andrew Jagos is in seventh grade at Lake Nona Middle School. He announced at age 3 that he was going to be a drummer and he has been taking lessons since he was seven. This is his second year performing in the band. Drew's favorite drummer is Neil Pert. You can also find him performing at his school with the Jazz Band and Wind Ensemble, as well as with the band at church.";
-    document.getElementById("individual_bio").innerText = bio;
-  }
-
-  function riley_kane()
-  {
-    document.getElementById("individual_image").src="./images/members/riley-kane.jpg";
-    document.getElementById("individual_name").innerText = "Riley Kane";
-    document.getElementById("individual_role").innerText = "Bassist";
-
-    document.getElementById("individual_image_mobile").src="./images/members/riley-kane.jpg";
-    document.getElementById("individual_name_mobile").innerText = "Riley Kane";
-    document.getElementById("individual_role_mobile").innerText = "Bassist";
-    
-    var bio = "Riley Kane is a Bass player and occasionally sings in the band. He is a graduate at Seminole State College and has been playing the bass since 2012. He is heavily inspired by Queen and similar rock bands.";
-    document.getElementById("individual_bio").innerText = bio;
-  }
-
-  function colby_brookshire()
-  {
-    document.getElementById("individual_image").src="./images/members/colby-brookshire.jpg";
-    document.getElementById("individual_name").innerText = "Colby Brookshire";
-    document.getElementById("individual_role").innerText = "Guitarist";
-    
-    document.getElementById("individual_image_mobile").src="./images/members/colby-brookshire.jpg";
-    document.getElementById("individual_name_mobile").innerText = "Colby Brookshire";
-    document.getElementById("individual_role_mobile").innerText = "Guitarist";
-
-    var bio = "Colby Brookshire has been the guitarist in this band since 2014. Other than guitar, he plays Bass and Keys on occasion. His guitar style is heavily influenced by Led Zeppelin, Queen, Joe Satriani, and Pink Floyd.";
-    document.getElementById("individual_bio").innerText = bio;
-  }
-
-  function sarah_suarez()
-  {
-    document.getElementById("individual_image").src="./images/members/sarah-suarez.jpg";
-    document.getElementById("individual_name").innerText = "Sarah Suarez";
-    document.getElementById("individual_role").innerText = "Singer";
-    
-    document.getElementById("individual_image_mobile").src="./images/members/sarah-suarez.jpg";
-    document.getElementById("individual_name_mobile").innerText = "Sarah Suarez";
-    document.getElementById("individual_role_mobile").innerText = "Singer";
-
-    var bio = "Sarah suarez is the vocalist in the band. She has been singer her whole life on and off but started in the band since 2014. She is inspired by artists such as Fiona Apple, Kaleigh Baker, and Freddie Mercury, but is also influenced by Latin artists such as Los Enanitos Verdes and Héroes del Silencio. She is so excited to tour.";
-    document.getElementById("individual_bio").innerText = bio;
-  }
-  
-  function abby_jagos()
-  {
-    document.getElementById("individual_image").src="./images/members/abby-jagos.jpg";
-    document.getElementById("individual_name").innerText = "Abby Jagos";
-    document.getElementById("individual_role").innerText = "Keyboardist";
-    
-    document.getElementById("individual_image_mobile").src="./images/members/abby-jagos.jpg";
-    document.getElementById("individual_name_mobile").innerText = "Abby Jagos";
-    document.getElementById("individual_role_mobile").innerText = "Keyboardist";
-
-    var bio = "Abby Jagos is a Junior at Lake Nona High School, but is attending VCC on a full-time basis through the Collegiate Program. She has been a part of the band for five years now. Taking lessons for keys since she was 12 years old, she also enjoys teaching herself songs on guitar in her free time. Her favorite piano players are Stevie Wonder and Billy Joel.";
-    document.getElementById("individual_bio").innerText = bio;
-  }
-
-  //added smooth scrolling :)
-
-  $(document).ready(function()
-  {
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-
-      var hash = this.hash;
-
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 250, function(){
-   
-        window.location.hash = hash;
-      });
-      }
-    });
-  });
-  
-  
-</script>
 
 </html>
