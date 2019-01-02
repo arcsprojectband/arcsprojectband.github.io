@@ -128,35 +128,48 @@ a {
 
   </header>
 
-  <main style="margin: auto 5%; background-color: #efefef; border: 2vh #efefef solid;" align="right">
-    <h1>Album Name Here (Fake)</h1>        
+  <main style="margin: auto 5%; background-color: #efefef; border: 2vh #efefef solid;" align="center">
+    <h1 class="hide-mobile">Enhance (2018) — The Δrcs Project</h1>        
+    <h1 class="show-mobile">Enhance (2018) — The Δrcs Project</h1>        
 
-      <div class="row-music" align="left">
+      <div class="row-music">
 
-        <nav class="hide-mobile">
+        <nav class="hide-mobile column correct-mobile">
+
+          <img src="./images/enhance.jpg" style="width:98%">
+
+        </nav>
+
+        <nav class="show-mobile correct-mobile">
+
+          <img src="./images/enhance.jpg" style="width:98%">
+
+        </nav>
+
+      <nav class="hide-mobile column correct-mobile">
 
         <hr>
 
         <div align="left" class="column correct-mobile">
           <h4>Sycamore Tree</h4>
-          <a href="http://venue.tlaphilly.com/" target="_blank"><h5 style="color: #ED1C25;">Theater of Living Arts</h5></a>
+          <h5 style="color: #ED1C25;">The Δrcs Project</h5></a>
         </div>   
 
         <div align="right" class="column correct-mobile">
-          <h4 style="display: inline-block">Philadelphia, PA</h4>
-          <h5 style="display: inline-block; padding-left: 2.5%; padding-right: 1.5%;"><button id="ticketButton" onclick="location.href='./SONG_BUY_LOCATION.html'" type="button">$0.99</button></h5>
+          <h4 style="display: inline-block">(3:49)</h4>
+          <h5 style="display: inline-block; padding-left: 2.5%; padding-right: 7.5%;"><button id="songBuyButton" onclick="location.href='./SONG_BUY_LOCATION.html'" type="button">BUY</button></h5>
         </div>   
 
         <hr>
 
         <div align="left" class="column correct-mobile">
           <h4>Call Me</h4>
-          <a href="http://www.20monroelive.com/" target="_blank"><h5 style="color: #ED1C25;">20 Monroe Live</h5></a>
+          <h5 style="color: #ED1C25;">The Δrcs Project</h5></a>
         </div>   
 
         <div align="right" class="column correct-mobile">
-          <h4 style="display: inline-block">Grand Rapids, MI</h4>
-          <h5 style="display: inline-block; padding-left: 2.5%; padding-right: 1.5%;"><button id="ticketButton" onclick="location.href='./SONG_BUY_LOCATION.html'" type="button">$0.99</button></h5>
+          <h4 style="display: inline-block">(4:24)</h4>
+          <h5 style="display: inline-block; padding-left: 2.5%; padding-right: 7.5%;"><button id="songBuyButton" onclick="location.href='./SONG_BUY_LOCATION.html'" type="button">BUY</button></h5>
         </div>     
 
         <hr>
@@ -170,11 +183,11 @@ a {
         <div align="left" class="column correct-mobile">
           <h4>Sycamore Tree</h4>
           <a href="http://venue.tlaphilly.com/" target="_blank"><h5 style="color: #ED1C25;">Theater of Living Arts</h5></a>
-          <h4>Philadelphia, PA</h4>
+          <h4>(3:49)</h4>
         </div>   
 
         <div align="center" class="column correct-mobile">
-          <h5 style="display: inline-block;"><button id="ticketButton-mobile" onclick="location.href='./TICKET_BUY_LOCATION.html'" type="button">Tickets</button></h5>
+          <h5 style="display: inline-block;"><button id="songBuyButton-mobile" onclick="location.href='./SONG_BUY_LOCATION.html'" type="button">BUY</button></h5>
         </div>   
 
         <hr>
@@ -182,17 +195,19 @@ a {
         <div align="left" class="column correct-mobile">
           <h4>Call Me</h4>
           <a href="http://www.20monroelive.com/" target="_blank"><h5 style="color: #ED1C25;">20 Monroe Live</h5></a>
-          <h4>Grand Rapids, MI</h4>
+          <h4>(4:24)</h4>
         </div>   
 
         <div align="center" class="column correct-mobile">
-          <h5 style="display: inline-block;"><button id="ticketButton-mobile" onclick="location.href='./TICKET_BUY_LOCATION.html'" type="button">Tickets</button></h5>
+          <h5 style="display: inline-block;"><button id="songBuyButton-mobile" onclick="location.href='./SONG_BUY_LOCATION.html'" type="button">BUY</button></h5>
         </div>   
 
         <hr>  
 
       </nav>
-      
+
+    </div>
+
   </main>
 
 </body>
