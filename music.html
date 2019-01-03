@@ -173,10 +173,10 @@ a {
 
         <div align="right" class="column correct-mobile">
           <h4 style="display: inline-block">(3:27)</h4>
-          <h5 style="display: inline-block; padding-left: 2.5%; padding-right: 11.5%;"><button id="songBuyButton" onclick="listen();" type="button">LISTEN</button></h5>
+          <h5 id="listenText" style="display: inline-block; padding-left: 2.5%; padding-right: 11.5%;"><button id="songBuyButton" onclick="listen();" type="button">LISTEN</button></h5>
 
           <div id="listen" style="display:none; margin: 1vh auto;">
-          <audio controls>
+          <audio id="audio" controls>
               <source src="./music/ice-cream-again.mp3" type="audio/mpeg">
           </audio>
           </div>
@@ -257,7 +257,13 @@ a {
         </div>   
 
         <div align="center" class="column correct-mobile">
-          <h5 style="display: inline-block;"><button id="songBuyButton-mobile" onclick="location.href='./SONG_BUY_LOCATION.html'" type="button">LISTEN</button></h5>
+          <h5 id="listenMobileText" style="display: inline-block;"><button id="songBuyButton-mobile" onclick="listenMobile();" type="button">LISTEN</button></h5>
+
+          <div id="listenMobile" style="display:none; margin: 1vh auto;">
+          <audio id="mobileAudio" hidden>
+              <source src="./music/ice-cream-again.mp3" type="audio/mpeg">
+          </audio>
+          </div>
         </div>   
 
         <hr>
@@ -334,7 +340,36 @@ a {
 
   function listen()
   {
+    var x = document.getElementById("audio"); 
+
+    x.play();
     document.getElementById("listen").style="display:inline-block; margin: 1vh auto;";
+    document.getElementById("listenText").innerHTML="<button id=\"songBuyButton\" onclick=\"listenSTOP();\" type=\"button\">LISTENING</button>";
+  }
+
+  function listenSTOP()
+  {
+    var x = document.getElementById("audio"); 
+
+    x.pause();
+    document.getElementById("listen").style="display:none; margin: 1vh auto;";
+    document.getElementById("listenText").innerHTML="<button id=\"songBuyButton\" onclick=\"listen();\" type=\"button\">LISTEN</button>";
+  }
+
+  function listenMobile()
+  {
+    var x = document.getElementById("mobileAudio"); 
+
+    x.play();
+    document.getElementById("listenMobileText").innerHTML="<button id=\"songBuyButton-mobile\" onclick=\"listenMobileSTOP();\" type=\"button\">LISTENING</button>";
+  }
+
+  function listenMobileSTOP()
+  {
+    var x = document.getElementById("mobileAudio"); 
+
+    x.pause();
+    document.getElementById("listenMobileText").innerHTML="<button id=\"songBuyButton-mobile\" onclick=\"listenMobile();\" type=\"button\">LISTEN</button>";
   }
 
 </script>
