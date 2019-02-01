@@ -43,6 +43,10 @@ button {
 	border-radius: 10%;
 }
 
+.circleimg {
+	border-radius: 50%;
+}
+
 .zoom {
   transition: transform .2s;  
 }
