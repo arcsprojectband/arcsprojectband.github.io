@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Δrcs Project — TSA</title>
+
+  <meta name="description" content="The Δrcs Project — On Tour Now!">
+  
+  <link rel="icon" type="image/png" href="./images/arcs-project-transparent.png">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="./js/modernizr-custom.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<style>
+
+h1 {
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+h4 {
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+h5 {
+  margin: 1% auto;  
+}
+
+h6 {
+  margin: 1% auto;  
+}
+
+  * {
+    box-sizing: border-box;
+}
+
+a {
+  color:inherit;
+  text-decoration: none !important;
+}
+
+li {
+  color:#0f0f0f;
+}
+
+.column {
+  float: left;
+  align-content: center;
+  padding: 5px;
+}
+
+.row-about {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.row-about::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .correct-mobile {    
+    width: 100%;
+  }  
+}
+
+@media only screen and (min-device-width: 481px) {  
+  .correct-mobile {
+    width: 33.33%;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  .correct-mobile_admin {    
+    width: 100%;
+  }  
+}
+
+@media only screen and (min-device-width: 481px) {  
+  .correct-mobile_admin {
+    width: 16.66%;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  .correct-mobile_individual {    
+    width: 100%;
+  }  
+}
+
+@media only screen and (min-device-width: 481px) {  
+  .correct-mobile_individual {
+    width: 66.66%;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  .correct-mobile_other {    
+    width: 100%;
+  }  
+}
+
+@media only screen and (min-device-width: 481px) {  
+  .correct-mobile_other {
+    width: 66.66%;
+  }
+}
+
+#individual_bio {
+  display: inline-block;
+  border-radius: 2vh;
+  padding: 2vh;
+  background: #e4e4e4;
+}
+
+</style>
+
+<body>
+
+  <div>
+    <video playsinline webkit-playsinline autoplay muted loop id="backgroundVideo" poster="./video/blue-silk.jpg">
+      <source src="./video/blue-silk.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-texture"></div> 
+    </div>
+
+  <header align="center" class="content">  
+
+    <div style="opacity: 0.75; z-index: -2;">
+      <a href="index.html">
+        <nav class="show-mobile">
+          <img src="./images/arcs-project-transparent.png" width="40%" height="40%">
+        </nav>
+
+        <nav class="hide-mobile">
+          <img src="./images/arcs-project-transparent.png" width="10%" height="10%">
+        </nav>
+      </a>
+    </div>
+
+      <div class="row">
+        <nav class="show-mobile">          
+          <button id="headerButton-mobile" onclick="location.href='./about.html'" type="button">About</button>
+          <button id="headerButton-mobile" onclick="location.href='./tour.html'" type="button">Tour</button>
+          <button id="headerButton-mobile" onclick="location.href='./music.html'" type="button">Music</button>
+          <button id="headerButton-mobile" onclick="location.href='./shop.html'" type="button">Shop</button>
+          <button id="headerButton-mobile" onclick="location.href='./blog.html'" type="button">Blog</button>
+          <button id="headerButton-mobile" onclick="location.href='./tsa.html'" type="button">TSA</button>
+          <button id="headerButton-active-mobile" onclick="location.href='./stem.html'" type="button">STEM</button>
+        </nav>
+
+        <nav class="hide-mobile">
+          <button id="headerButton" onclick="location.href='./about.html'" type="button">About</button>
+          <button id="headerButton" onclick="location.href='./tour.html'" type="button">Tour</button>
+          <button id="headerButton" onclick="location.href='./music.html'" type="button">Music</button>
+          <button id="headerButton" onclick="location.href='./shop.html'" type="button">Shop</button>
+          <button id="headerButton" onclick="location.href='./blog.html'" type="button">Blog</button>
+          <button id="headerButton" onclick="location.href='./tsa.html'" type="button">TSA</button>
+          <button id="headerButton-active" onclick="location.href='./stem.html'" type="button">STEM</button>
+        </nav>
+      </div>
+
+  </header>
+
+  <main style="margin: auto 5%; background-color: #efefef; border: 2vh #efefef solid;" align="center">
+    <nav class="hide-mobile">
+        <h1>🎓 Standard Graduation Diploma Requirements</h1>    
+    </nav>
+    <nav class="show-mobile">
+        <h2>🎓 Standard Graduation Diploma Requirements</h2>    
+    </nav>
+    <h4 style="margin: auto; text-transform: none;">
+        <li>English I-IV (or equivalent accelerated course)</li>
+        <li>Math grades 912 (must include Algebra and Geometry)</li>
+        <li>Science credits - must include Biology and three courses must contain a lab component and two equally rigorous courses</li>
+        <li>Social Studies - must include U.S. History, World History, U.S. Government, and Economics with Financial Literacy</li>
+        <li>One Fine/Performing Arts credit</li>
+        <li>Half Personal Fitness and half PE Elective</li>
+        <li>Elective Credits</li>
+        <li>Must include one online course</li>
+    </h4>
+
+      <br><hr><br>
+
+      <nav class="hide-mobile">
+          <h1>Administration 🏫</h1>
+      </nav>
+      <nav class="show-mobile">
+          <h2>Administration 🏫</h2>
+      </nav>
+      <br>
+
+      <div class="row-about" align="center">
+
+        <div class="column correct-mobile_admin">
+          <nav class="hide-mobile">
+            <img class="roundimg" src="./images/stem/administrators/Collins.png" style="width:66.66%">
+          </nav>
+          <nav class="show-mobile">
+            <img class="roundimg" src="./images/stem/administrators/Collins.png" style="width:100%">
+          </nav>
+          <h4>Dr. Connie Collins</h4>
+          <h5>Principal</h5>
+        </a></div>    
+
+        <div class="column correct-mobile_admin">
+          <nav class="hide-mobile">
+              <img class="roundimg" src="./images/stem/administrators/Backel.png" style="width:66.66%">
+          </nav>
+          <nav class="show-mobile">
+              <img class="roundimg" src="./images/stem/administrators/Backel.png" style="width:100%">
+          </nav>
+          <h4>Dr. Michelle Backel</h4>
+          <h5>Assistant Principal</h5>
+          <h6>Advanced Placement</h6>
+        </a></div>      
+
+        <div class="column correct-mobile_admin">
+          <nav class="hide-mobile">
+              <img class="roundimg" src="./images/stem/administrators/Coleman.png" style="width:66.66%">
+          </nav>
+          <nav class="show-mobile">
+              <img class="roundimg" src="./images/stem/administrators/Coleman.png" style="width:100%">
+          </nav>
+          <h4>Mr. Barry Coleman</h4>
+          <h5>Assistant Principal</h5>
+          <h6>IB Coordinator</h6>
+        </a></div>       
+        
+        <div class="column correct-mobile_admin">
+          <nav class="hide-mobile">
+              <img class="roundimg" src="./images/stem/administrators/Hennessy.png" style="width:66.66%">
+          </nav>
+          <nav class="show-mobile">
+              <img class="roundimg" src="./images/stem/administrators/Hennessy.png" style="width:100%">
+          </nav>
+          <h4>Mr. Michael Hennessy</h4>
+          <h5>Assistant Principal</h5>
+          <h6>Health Academy Coordinator</h6>
+        </a></div>     
+
+        <div class="column correct-mobile_admin">
+          <nav class="hide-mobile">
+              <img class="roundimg" src="./images/stem/administrators/Mizzel.png" style="width:66.66%">
+          </nav>
+          <nav class="show-mobile">
+              <img class="roundimg" src="./images/stem/administrators/Mizzel.png" style="width:100%">
+          </nav>
+          <h4>Dr. Orvie Mizzell-Bullock</h4>
+          <h5>Assistant Principal</h5>
+          <h6>Discipline 12th grade</h6>
+        </a></div>        
+
+        <div class="column correct-mobile_admin">
+          <nav class="hide-mobile">
+              <img class="roundimg" src="./images/stem/administrators/Lance.jpg" style="width:66.66%">
+          </nav>
+          <nav class="show-mobile">
+              <img class="roundimg" src="./images/stem/administrators/Lance.jpg" style="width:100%">
+          </nav>
+          <h4>Mr. Lance Abney</h4>
+          <h5>Assistant Principal</h5>
+          <h6>World Languages</h6>
+        </a></div>    
+
+    </div>
+
+    <br><hr><br>
+
+    <div id="individual">
+
+      <div class="row-about" align="left">
+
+          <nav class="hide-mobile" align="center">
+              <h1 align="left">Technology Usage</h1> 
+            </nav>
+            <nav class="show-mobile" align="center">            
+              <h2 align="left">Technology Usage</h2> 
+            </nav>  
+
+        <div class="column correct-mobile_individual">
+          <p style="margin: auto; text-transform: none;">
+              Seminole County Public Schools believes technology is a valuable educational tool. All classroom teachers use technology as an instructional tool, such as use of the Internet to access encyclopedias, magazines, the district’s media/library catalog, websites for educational projects, on-line district and state classes also to conduct research in preparation for a project or presentation.
+          </p>        
+        </div>
+
+        <div class="column correct-mobile">
+          <nav class="hide-mobile" align="right">            
+            <img class="roundimg_sm" src="./images/stem/technology-usage.png" style="width:66.66%">
+          </nav>
+          <nav class="show-mobile" align="center">            
+            <img class="roundimg_sm" src="./images/stem/technology-usage.png" style="width:100%">
+          </nav>
+        </div>  
+
+        
+      </div>
+
+      </h4>
+    </div>    
+
+    <div id="individual"></div><br><hr><br>
+
+      <div class="row-about" align="left">
+
+        <div class="column correct-mobile">
+          <nav class="hide-mobile" align="center">
+            <img id="individual_image" class="roundimg_sm" src="./images/stem/ib.png" style="width:66.66%">
+            <h4 id="individual_name">IB Program</h4>            
+          </nav>
+          <nav class="show-mobile" align="center">
+            <img id="individual_image_mobile" class="roundimg_sm" src="./images/stem/ib.png" style="width:100%">
+            <h4 id="individual_name_mobile">IB Program</h4>
+          </nav>
+        </div>  
+
+        <div class="column correct-mobile_individual">
+          <p id="individual_bio" style="margin: auto; text-transform: none;">
+              The International Baccalaureate Program at Seminole High School is an officially recognized affiliate member of the International Baccalaureate Organization. The International Baccalaureate Diploma Program is a demanding pre-university course of study that is designed for highly motivated secondary school students between ages 16 and 19. The program has earned a reputation for rigorous assessment, helping IB diploma holders access the world’s leading universities.
+          </p>        
+        </div>
+      </div>
+
+      <br><hr><br>
+
+      <div class="row-about" align="center">
+
+        <div class="column zoom correct-mobile recolor_hover"><a href="#individual" onclick="ib_program();">
+          <nav class="hide-mobile">
+            <img class="roundimg" src="./images/stem/ib.png" style="width:66.66%">
+          </nav>
+          <nav class="show-mobile">
+            <img class="roundimg" src="./images/stem/ib.png" style="width:100%">
+          </nav>
+          <h4>IB Program</h4>
+        </a></div>    
+
+        <div style="padding: 10vh 0 10vh 0;" class="column zoom correct-mobile recolor_hover"><a href="#individual" onclick="health_academy();">
+          <nav class="hide-mobile">
+            <img class="roundimg" src="./images/stem/health-academy-scaled.png" style="width:100%">
+          </nav>
+          <nav class="show-mobile">
+            <img class="roundimg" src="./images/stem/health-academy-scaled.png" style="width:100%">
+          </nav>
+          <h4>Health Academy</h4>
+        </a></div>    
+
+        <div class="column zoom correct-mobile recolor_hover"><a href="#individual" onclick="mass_media();">
+          <nav class="hide-mobile">
+            <img class="roundimg" src="./images/stem/mass-media.png" style="width:66.66%">
+          </nav>
+          <nav class="show-mobile">
+            <img class="roundimg" src="./images/stem/mass-media.png" style="width:100%">
+          </nav>
+          <h4>Mass Media</h4>          
+        </a></div>    
+
+        <div class="column zoom correct-mobile">
+            <nav class="hide-mobile">
+                <img src="./images/shop/transparent.png" style="width:5%">
+              </nav>
+        </div>
+        
+        <div style="padding: 5vh 0 5vh 0;" class="column zoom correct-mobile recolor_hover"><a href="#individual" onclick="advanced_placement();">
+          <nav class="hide-mobile">
+            <img class="roundimg" src="./images/stem/ap.png" style="width:50%">
+          </nav>
+          <nav class="show-mobile">
+            <img class="roundimg" src="./images/stem/ap.png" style="width:100%">
+          </nav>
+          <h4>Advanced Placement</h4>
+        </a></div>    
+
+        <div class="column zoom correct-mobile recolor_hover"><a href="#individual" onclick="extracurriculars();">
+          <nav class="hide-mobile">
+            <img class="roundimg" src="./images/stem/extracurriculars.png" style="width:40%">
+          </nav>
+          <nav class="show-mobile">
+            <img class="roundimg" src="./images/stem/extracurriculars.png" style="width:100%">
+          </nav>
+          <h4>Extracurriculars</h4>
+        </a></div>       
+
+    </div>
+      
+  </main>
+
+</body>
+
+<script>
+
+  function ib_program()
+  {
+    document.getElementById("individual_image").src="./images/stem/ib.png";
+    document.getElementById("individual_name").innerText = "IB Program";    
+    
+    document.getElementById("individual_image_mobile").src="./images/stem/ib.png";
+    document.getElementById("individual_name_mobile").innerText = "IB Program";
+
+    var bio = "The International Baccalaureate Program at Seminole High School is an officially recognized affiliate member of the International Baccalaureate Organization. The International Baccalaureate Diploma Program is a demanding pre-university course of study that is designed for highly motivated secondary school students between ages 16 and 19. The program has earned a reputation for rigorous assessment, helping IB diploma holders access the world’s leading universities.";
+    document.getElementById("individual_bio").innerText = bio;
+  }
+
+  function health_academy()
+  {
+    document.getElementById("individual_image").src="./images/stem/health-academy-scaled.png";
+    document.getElementById("individual_name").innerText = "Health Academy";
+
+    document.getElementById("individual_image_mobile").src="./images/stem/health-academy-scaled.png";
+    document.getElementById("individual_name_mobile").innerText = "Health Academy";
+    
+    var bio = "The mission of the Academy of Health Careers at Seminole High School is to afford students a rigorous interdisciplinary instructional program that ensures relevant preparation for entry in the health care industry and to pursue health careers at the post-secondary level upon graduation. The mission is achieved through a strong partnership with the health industry, community, and with institutes of higher learning. The Healthcare system requires many talented individuals to lead the way in health interventions.";
+    document.getElementById("individual_bio").innerText = bio;
+  }
+
+  function mass_media()
+  {
+    document.getElementById("individual_image").src="./images/stem/mass-media.png";
+    document.getElementById("individual_name").innerText = "Mass Media";
+    
+    document.getElementById("individual_image_mobile").src="./images/stem/mass-media.png";
+    document.getElementById("individual_name_mobile").innerText = "Mass Media";
+
+    var bio = "The Mass Media CAPE Academy at Seminole High School has expanded to include Web & Digital Design, Microsoft Business Applications, Programming, Video Production, Newspaper and Yearbook. The purpose of this website is to assist parents and students to review these outstanding programs and choose the course path that is the most beneficial for the student’s future careers and education. All courses offer either Adobe or Microsoft industry certifications. Many other benefits to these programs include potential scholarships, college credits, certifications, designations, student portfolio development, as well as advanced career training.";
+    document.getElementById("individual_bio").innerText = bio;
+  }
+
+  function advanced_placement()
+  {
+    document.getElementById("individual_image").src="./images/stem/ap.png";
+    document.getElementById("individual_name").innerText = "Advanced Placement";
+    
+    document.getElementById("individual_image_mobile").src="./images/stem/ap.png";
+    document.getElementById("individual_name_mobile").innerText = "Advanced Placement";
+
+    var bio = "The College Board’s Advanced Placement (AP) program is a nationwide program consisting of over 30 college level courses and exams in subjects ranging from art to statistics offered at participating high schools. Studies have shown that students, who complete a solid academic core, including advanced courses, are more likely to be successful in college. Many school counselors have found that AP courses provide the challenging content necessary to engage all types of learners.";
+    document.getElementById("individual_bio").innerText = bio;
+  }
+  
+  function extracurriculars()
+  {
+    document.getElementById("individual_image").src="./images/stem/extracurriculars.png";
+    document.getElementById("individual_name").innerText = "Extracurriculars";
+    
+    document.getElementById("individual_image_mobile").src="./images/stem/extracurriculars.png";
+    document.getElementById("individual_name_mobile").innerText = "Extracurriculars";
+
+    var bio = "";
+    document.getElementById("individual_bio").innerText = bio;
+  }
+
+  //added smooth scrolling :)
+
+  $(document).ready(function()
+  {
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 250, function(){
+   
+        window.location.hash = hash;
+      });
+      }
+    });
+  });
+  
+  
+</script>
+
+</html>
