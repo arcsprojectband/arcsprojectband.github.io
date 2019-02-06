@@ -114,10 +114,74 @@ li {
   }
 }
 
-#individual_bio {
+#individual_bio_main {
   display: inline-block;
   border-radius: 2vh;
   padding: 2vh;
+  background: #e4e4e4;
+}
+
+#individual_bio_1 {
+  display: none;
+  display: inline-block;
+  border-radius: 2vh;
+  padding: 2vh;
+  background: #e4e4e4;
+}
+
+#individual_bio_1_img {
+  display: none;
+  display: inline-block;
+  border-radius: 2vh;
+  padding: 1.5vh;
+  background: #e4e4e4;
+}
+
+#individual_bio_2 {
+  display: none;
+  display: inline-block;
+  border-radius: 2vh;
+  padding: 2vh;
+  background: #e4e4e4;
+}
+
+#individual_bio_2_img {
+  display: none;
+  display: inline-block;
+  border-radius: 2vh;
+  padding: 1.5vh;
+  background: #e4e4e4;
+}
+
+#individual_bio_3 {
+  display: inline-block;
+  display: none;
+  border-radius: 2vh;
+  padding: 2vh;
+  background: #e4e4e4;
+}
+
+#individual_bio_3_img {
+  display: none;
+  display: inline-block;
+  border-radius: 2vh;
+  padding: 1.5vh;
+  background: #e4e4e4;
+}
+
+#individual_bio_4_img {
+  display: none;
+  display: inline-block;
+  border-radius: 2vh;
+  padding: 1.5vh;
+  background: #e4e4e4;
+}
+
+#individual_bio_5_img {
+  display: none;
+  display: inline-block;
+  border-radius: 2vh;
+  padding: 1.5vh;
   background: #e4e4e4;
 }
 
@@ -324,9 +388,47 @@ li {
         </div>  
 
         <div class="column correct-mobile_individual">
-          <p id="individual_bio" style="margin: auto; text-transform: none;">
+          <p id="individual_bio_main" style="margin: 1vh 0 1vh 0; text-transform: none;">
               The International Baccalaureate Program at Seminole High School is an officially recognized affiliate member of the International Baccalaureate Organization. The International Baccalaureate Diploma Program is a demanding pre-university course of study that is designed for highly motivated secondary school students between ages 16 and 19. The program has earned a reputation for rigorous assessment, helping IB diploma holders access the world’s leading universities.
-          </p>        
+          </p>
+          
+          <h2 id="individual_bio_1_name" align="center">✏️ Curriculum</h2>
+          <p id="individual_bio_1" style="margin: 1vh 0 1vh 0; text-transform: none;">
+              The International Baccalaureate (IB) Diploma program is a rigorous pre-university course of study, leading to internationally standardized examinations. The program is designed as a comprehensive two-year curriculum that allows its graduates to fulfill requirements of many different nations’ education systems.
+          </p>
+          <nav class="hide-mobile" align="center">
+            <img id="individual_bio_1_img" align="center" style="margin: 0" class="roundimg_sm" src="./images/stem/curriculum.png" width="50%">          
+          </nav>
+          <nav class="show-mobile" align="center">
+            <img id="individual_bio_1_img" align="center" style="margin: 0" class="roundimg_sm" src="./images/stem/curriculum.png" width="100%">             
+          </nav>
+
+          <h2 id="individual_bio_2_name" align="center">📒 IB Coordinator</h2>
+          <p id="individual_bio_2" style="margin: 1vh 0 1vh 0; text-transform: none;">
+              Mr. Carson Stone’s responsibilities include co-managing IB Juniors’ CAS, a component of the IB diploma that requires students to complete creativity, action, and service, registering IB students for Standard Level and Higher Level exams, and meeting with current and potential IB students and parents.
+          </p>
+          <nav class="hide-mobile" align="center">
+            <img id="individual_bio_2_img" align="center" style="margin: 0" class="roundimg_sm" src="./images/stem/carson-stone.png" width="33.33%">          
+          </nav>
+          <nav class="show-mobile" align="center">
+            <img id="individual_bio_2_img" align="center" style="margin: 0" class="roundimg_sm" src="./images/stem/carson-stone.png" width="100%">             
+          </nav>
+
+          <h2 id="individual_bio_3_name" align="center"></h2>
+          <p id="individual_bio_3" style="margin: 1vh 0 1vh 0; text-transform: none;">
+              
+          </p>
+          <nav class="hide-mobile" align="center">
+            <img id="individual_bio_3_img" align="center" style="margin: 1vh auto" class="roundimg_sm" src="./images/stem/ib-community.png" width="45%">          
+            <img id="individual_bio_4_img" align="center" style="margin: 1vh 1vh auto" class="roundimg_sm" src="./images/stem/biology-lab.png" width="45%">          
+            <img id="individual_bio_5_img" align="center" style="margin: 1vh auto" class="roundimg_sm" src="./images/stem/student-presentations.png" width="45%">          
+          </nav>
+          <nav class="show-mobile" align="center">
+            <img id="individual_bio_3_img" align="center" style="margin: 0" class="roundimg_sm" src="./images/stem/ib-community.png" width="100%">             
+            <img id="individual_bio_4_img" align="center" style="margin: 0" class="roundimg_sm" src="./images/stem/biology-lab.png" width="100%">             
+            <img id="individual_bio_5_img" align="center" style="margin: 0" class="roundimg_sm" src="./images/stem/student-presentations.png" width="100%">             
+          </nav>
+
         </div>
       </div>
 
@@ -406,8 +508,39 @@ li {
     document.getElementById("individual_image_mobile").src="./images/stem/ib.png";
     document.getElementById("individual_name_mobile").innerText = "IB Program";
 
-    var bio = "The International Baccalaureate Program at Seminole High School is an officially recognized affiliate member of the International Baccalaureate Organization. The International Baccalaureate Diploma Program is a demanding pre-university course of study that is designed for highly motivated secondary school students between ages 16 and 19. The program has earned a reputation for rigorous assessment, helping IB diploma holders access the world’s leading universities.";
-    document.getElementById("individual_bio").innerText = bio;
+    var bio_main = "The International Baccalaureate Program at Seminole High School is an officially recognized affiliate member of the International Baccalaureate Organization. The International Baccalaureate Diploma Program is a demanding pre-university course of study that is designed for highly motivated secondary school students between ages 16 and 19. The program has earned a reputation for rigorous assessment, helping IB diploma holders access the world’s leading universities.";
+    document.getElementById("individual_bio_main").innerText = bio_main;
+    
+    var bio_1_name = "✏️ Curriculum";
+    var bio_1 = "The International Baccalaureate (IB) Diploma program is a rigorous pre-university course of study, leading to internationally standardized examinations. The program is designed as a comprehensive two-year curriculum that allows its graduates to fulfill requirements of many different nations’ education systems.";
+    document.getElementById("individual_bio_1_name").innerText = bio_1_name;
+    document.getElementById("individual_bio_1_name").style.display = "block";
+    document.getElementById("individual_bio_1").innerText = bio_1;
+    document.getElementById("individual_bio_1").style.display = "inline-block";
+    document.getElementById("individual_bio_1_img").src="./images/stem/curriculum.png";
+    document.getElementById("individual_bio_1_img").style.display = "inline-block";
+    var bio_2_name = "📒 IB Coordinator";
+    var bio_2 = "Mr. Carson Stone’s responsibilities include co-managing IB Juniors’ CAS, a component of the IB diploma that requires students to complete creativity, action, and service, registering IB students for Standard Level and Higher Level exams, and meeting with current and potential IB students and parents.";
+    document.getElementById("individual_bio_2_name").innerText = bio_2_name;
+    document.getElementById("individual_bio_2_name").style.display = "block";
+    document.getElementById("individual_bio_2").innerText = bio_2;
+    document.getElementById("individual_bio_2").style.display = "inline-block";
+    document.getElementById("individual_bio_2_img").src="./images/stem/carson-stone.png";
+    document.getElementById("individual_bio_2_img").style.display = "inline-block";
+    var bio_3_name = "";
+    var bio_3 = "";
+    document.getElementById("individual_bio_3_name").innerText = bio_3_name;
+    document.getElementById("individual_bio_3_name").style.display = "none";
+    document.getElementById("individual_bio_3").innerText = bio_3;
+    document.getElementById("individual_bio_3").style.display = "none";
+    document.getElementById("individual_bio_3_img").src="./images/stem/ib-community.png";
+    document.getElementById("individual_bio_3_img").style.display = "inline-block";
+
+    document.getElementById("individual_bio_4_img").src="./images/stem/biology-lab.png";
+    document.getElementById("individual_bio_4_img").style.display = "inline-block";
+
+    document.getElementById("individual_bio_5_img").src="./images/stem/student-presentations.png";
+    document.getElementById("individual_bio_5_img").style.display = "inline-block";
   }
 
   function health_academy()
@@ -418,8 +551,39 @@ li {
     document.getElementById("individual_image_mobile").src="./images/stem/health-academy-scaled.png";
     document.getElementById("individual_name_mobile").innerText = "Health Academy";
     
-    var bio = "The mission of the Academy of Health Careers at Seminole High School is to afford students a rigorous interdisciplinary instructional program that ensures relevant preparation for entry in the health care industry and to pursue health careers at the post-secondary level upon graduation. The mission is achieved through a strong partnership with the health industry, community, and with institutes of higher learning. The Healthcare system requires many talented individuals to lead the way in health interventions.";
-    document.getElementById("individual_bio").innerText = bio;
+    var bio_main = "The mission of the Academy of Health Careers at Seminole High School is to afford students a rigorous interdisciplinary instructional program that ensures relevant preparation for entry in the health care industry and to pursue health careers at the post-secondary level upon graduation. The mission is achieved through a strong partnership with the health industry, community, and with institutes of higher learning. The Healthcare system requires many talented individuals to lead the way in health interventions.";
+    document.getElementById("individual_bio_main").innerText = bio_main;
+
+    var bio_1_name = "👨‍⚕️ Michael Hennessy";
+    var bio_1 = "Mr. Hennessy graduated from the University of Central Florida with a double major in Communications and Education. He went on to attain a Master of Education at the American College of Education. He was first an Intensive Reading Instructor at both Orange County Public Schools and Seminole County Public Schools. Then in 2009, he went on to become a dean of students at Lake Howell. Presently, from 2012, Mr. Hennessy is serving as Assistant Principal at Seminole High, as well as the Academy of Health Careers coordinator.";
+    document.getElementById("individual_bio_1_name").innerText = bio_1_name;
+    document.getElementById("individual_bio_1_name").style.display = "block";
+    document.getElementById("individual_bio_1").innerText = bio_1;
+    document.getElementById("individual_bio_1").style.display = "inline-block";
+    document.getElementById("individual_bio_1_img").src="./images/stem/michael-hennessy.png";
+    document.getElementById("individual_bio_1_img").style.display = "inline-block";
+    var bio_2_name = "🏥️ Program Features";
+    var bio_2 = "• Curriculum with health care topics integrated into academic and courses: Rigorous academic preparation for career and college bound students\r\n• State-of-the-art laboratories: Vital Simulator Manikin, integrating technology with health care scenarios\r\n• Award winning faculty with health care experience and credentials\r\n• Intensive student supports such as Parent/Student workshops in college admissions\r\n• CPR Certifications & First Aid Training\r\n• Hands on clinical experience in area hospitals, medical offices, emergency medicine facilities, veterinary health care sites including the Central Florida Zoo\r\n• Career exposure through job shadow & clinical experiences";
+    document.getElementById("individual_bio_2_name").innerText = bio_2_name;
+    document.getElementById("individual_bio_2_name").style.display = "block";
+    document.getElementById("individual_bio_2").innerText = bio_2;
+    document.getElementById("individual_bio_2").style.display = "inline-block";
+    document.getElementById("individual_bio_2_img").src="./images/stem/cane.png";
+    document.getElementById("individual_bio_2_img").style.display = "inline-block";
+    var bio_3_name = "";
+    var bio_3 = "";
+    document.getElementById("individual_bio_3_name").innerText = bio_3_name;
+    document.getElementById("individual_bio_3_name").style.display = "none";
+    document.getElementById("individual_bio_3").innerText = bio_3;
+    document.getElementById("individual_bio_3").style.display = "none";
+    document.getElementById("individual_bio_3_img").src="./images/stem/cpr.png";
+    document.getElementById("individual_bio_3_img").style.display = "inline-block";
+
+    document.getElementById("individual_bio_4_img").src="./images/stem/ambulance.png";
+    document.getElementById("individual_bio_4_img").style.display = "inline-block";
+
+    document.getElementById("individual_bio_5_img").src="./images/stem/health-learning.png";
+    document.getElementById("individual_bio_5_img").style.display = "inline-block";
   }
 
   function mass_media()
@@ -430,8 +594,39 @@ li {
     document.getElementById("individual_image_mobile").src="./images/stem/mass-media.png";
     document.getElementById("individual_name_mobile").innerText = "Mass Media";
 
-    var bio = "The Mass Media CAPE Academy at Seminole High School has expanded to include Web & Digital Design, Microsoft Business Applications, Programming, Video Production, Newspaper and Yearbook. The purpose of this website is to assist parents and students to review these outstanding programs and choose the course path that is the most beneficial for the student’s future careers and education. All courses offer either Adobe or Microsoft industry certifications. Many other benefits to these programs include potential scholarships, college credits, certifications, designations, student portfolio development, as well as advanced career training.";
-    document.getElementById("individual_bio").innerText = bio;
+    var bio_main = "The Mass Media CAPE Academy at Seminole High School has expanded to include Web & Digital Design, Microsoft Business Applications, Programming, Video Production, Newspaper and Yearbook. The purpose of this website is to assist parents and students to review these outstanding programs and choose the course path that is the most beneficial for the student’s future careers and education. All courses offer either Adobe or Microsoft industry certifications. Many other benefits to these programs include potential scholarships, college credits, certifications, designations, student portfolio development, as well as advanced career training.";
+    document.getElementById("individual_bio_main").innerText = bio_main;
+
+    var bio_1_name = "📷 Veronica Sarmiento";
+    var bio_1 = "Veronica has an extensive amount of experience and training in art, technology and design, She has ten years of teaching experience as well as industry experience in graphic design and project management. When with Burdines/Macy’s she worked with the advertising department to provide software support and troubleshooting for the entire department including the in-house digital photography studio, image library, pre-press department, in-house broadcasting department, and administrative users such as account executives and media buyers.";
+    document.getElementById("individual_bio_1_name").innerText = bio_1_name;
+    document.getElementById("individual_bio_1_name").style.display = "block";
+    document.getElementById("individual_bio_1").innerText = bio_1;
+    document.getElementById("individual_bio_1").style.display = "inline-block";
+    document.getElementById("individual_bio_1_img").src="./images/stem/veronica-sarmiento.png";
+    document.getElementById("individual_bio_1_img").style.display = "inline-block";
+    var bio_2_name = "Renee Dubber 👨‍🏫";
+    var bio_2 = "Renee is a national Board Certified teacher who has been teaching in the Florida Public School System for the past 17 years working primarily with Title 1 schools and at risk youth. Prior to teaching she worked in corporate marketing and has continued to do contract work for various businesses while teaching. She is a certified Microsoft Office Specialist and brings a great deal of technology experience to the program. Her extensive work with at risk youth, combined with her teaching experience and numerous certifications, make her an asset to the Mass Media CAPE Academy.";
+    document.getElementById("individual_bio_2_name").innerText = bio_2_name;
+    document.getElementById("individual_bio_2_name").style.display = "block";
+    document.getElementById("individual_bio_2").innerText = bio_2;
+    document.getElementById("individual_bio_2").style.display = "inline-block";
+    document.getElementById("individual_bio_2_img").src="./images/stem/renee-dubber.png";
+    document.getElementById("individual_bio_2_img").style.display = "inline-block";
+    var bio_3_name = "📧 Kevin Kelley";
+    var bio_3 = "Kevin is a professional musician who brings a great deal of experience with graphics and print media to the team, he owned a direct mail marketing company and has a vast amount of technology experience with web design, graphics and programming. His varied experience in the arts and business, as well as teaching experience, is an asset to the program.";
+    document.getElementById("individual_bio_3_name").innerText = bio_3_name;
+    document.getElementById("individual_bio_3_name").style.display = "block";
+    document.getElementById("individual_bio_3").innerText = bio_3;
+    document.getElementById("individual_bio_3").style.display = "inline-block";
+    document.getElementById("individual_bio_3_img").src="./images/stem/kevin-kelley.png";
+    document.getElementById("individual_bio_3_img").style.display = "inline-block";
+
+    document.getElementById("individual_bio_4_img").src="./images/stem/mike-smith.png";
+    document.getElementById("individual_bio_4_img").style.display = "none";
+
+    document.getElementById("individual_bio_5_img").src="./images/stem/ginger-schmaus.png";
+    document.getElementById("individual_bio_5_img").style.display = "none";
   }
 
   function advanced_placement()
@@ -442,8 +637,39 @@ li {
     document.getElementById("individual_image_mobile").src="./images/stem/ap.png";
     document.getElementById("individual_name_mobile").innerText = "Advanced Placement";
 
-    var bio = "The College Board’s Advanced Placement (AP) program is a nationwide program consisting of over 30 college level courses and exams in subjects ranging from art to statistics offered at participating high schools. Studies have shown that students, who complete a solid academic core, including advanced courses, are more likely to be successful in college. Many school counselors have found that AP courses provide the challenging content necessary to engage all types of learners.";
-    document.getElementById("individual_bio").innerText = bio;
+    var bio_main = "The College Board’s Advanced Placement (AP) program is a nationwide program consisting of over 30 college level courses and exams in subjects ranging from art to statistics offered at participating high schools. Studies have shown that students, who complete a solid academic core, including advanced courses, are more likely to be successful in college. Many school counselors have found that AP courses provide the challenging content necessary to engage all types of learners.";
+    document.getElementById("individual_bio_main").innerText = bio_main;
+
+    var bio_1_name = "🍎️ Sample Courses";
+    var bio_1 = "Math\r\n• AP Calculus: AB (Calculus 1) topics include limits and continuity, derivatives and integrals, and their applications. BC (Calculus 1 and 2) includes all AB topics with additional topics in sequences and series, polars, parametrics, and vectors.\r\n• AP Statistics: This course introduces students to the major concepts and tools for collecting, analyzing, and drawing conclusions from data. The four broad conceptual themes are exploring data, planning a study, anticipating patterns in advance (simulation), and statistical reference.\r\n\r\nScience\r\n• AP Biology: This course is a first year college biology course. The content includes cell biology, biochemistry, classical genetics, molecular genetics, evolution, ecology, taxonomy, and the anatomy and physiology of plants and animals.\r\n• AP Chemistry: The purpose of this course is to provide an in-depth quantitative study of chemical principles, concepts, and experimental Methods. Twenty-five percent of instructional time is devoted to inquiry based laboratory investigations. Students ask questions, make observations and predictions, design experiments, analyze data, and construct arguments in a collaborative setting, where they direct and monitor their progress.\r\n• AP Physics C with Mechanics: AP Physics C is a calculus-based, university level physics course that covers classical mechanics (kinematics, dynamics, rotation, gravitation and oscillation). Approximately 25 percent of the instructional time will be spent in hands-on laboratory work, with an emphasis on inquiry-based investigations that provide students with opportunities to apply the science practices.\r\n• AP Environmental Science: This is a college level course which provides the student with the scientific principles, concepts, and methods required to understand the interrelationships of the natural world, to identify and analyze environmental problems both natural and human-made, to evaluate the relative risks associated with these problems, and to examine alternative solutions for resolving and or preventing them.";
+    document.getElementById("individual_bio_1_name").innerText = bio_1_name;
+    document.getElementById("individual_bio_1_name").style.display = "block";
+    document.getElementById("individual_bio_1").innerText = bio_1;
+    document.getElementById("individual_bio_1").style.display = "inline-block";
+    document.getElementById("individual_bio_1_img").src="./images/stem/tutoring-use.png";
+    document.getElementById("individual_bio_1_img").style.display = "inline-block";
+    var bio_2_name = "";
+    var bio_2 = "";
+    document.getElementById("individual_bio_2_name").innerText = bio_2_name;
+    document.getElementById("individual_bio_2_name").style.display = "none";
+    document.getElementById("individual_bio_2").innerText = bio_2;
+    document.getElementById("individual_bio_2").style.display = "none";
+    document.getElementById("individual_bio_2_img").src="./images/stem/laptop-use.jpg";
+    document.getElementById("individual_bio_2_img").style.display = "none";
+    var bio_3_name = "";
+    var bio_3 = "";
+    document.getElementById("individual_bio_3_name").innerText = bio_3_name;
+    document.getElementById("individual_bio_3_name").style.display = "none";
+    document.getElementById("individual_bio_3").innerText = bio_3;
+    document.getElementById("individual_bio_3").style.display = "none";
+    document.getElementById("individual_bio_3_img").src="./images/stem/class.png";
+    document.getElementById("individual_bio_3_img").style.display = "inline-block";
+
+    document.getElementById("individual_bio_4_img").src="./images/stem/presentating.png";
+    document.getElementById("individual_bio_4_img").style.display = "inline-block";
+
+    document.getElementById("individual_bio_5_img").src="./images/stem/mack.png";
+    document.getElementById("individual_bio_5_img").style.display = "inline-block";
   }
   
   function extracurriculars()
@@ -454,8 +680,39 @@ li {
     document.getElementById("individual_image_mobile").src="./images/stem/extracurriculars.png";
     document.getElementById("individual_name_mobile").innerText = "Extracurriculars";
 
-    var bio = "";
-    document.getElementById("individual_bio").innerText = bio;
+    var bio_main = "";
+    document.getElementById("individual_bio_main").innerText = bio_main;
+
+    var bio_1_name = "👨‍⚕️ Michael Hennessy";
+    var bio_1 = "Mr. Hennessy graduated from the University of Central Florida with a double major in Communications and Education. He went on to attain a Master of Education at the American College of Education. He was first an Intensive Reading Instructor at both Orange County Public Schools and Seminole County Public Schools. Then in 2009, he went on to become a dean of students at Lake Howell. Presently, from 2012, Mr. Hennessy is serving as Assistant Principal at Seminole High, as well as the Academy of Health Careers coordinator.";
+    document.getElementById("individual_bio_1_name").innerText = bio_1_name;
+    document.getElementById("individual_bio_1_name").style.display = "block";
+    document.getElementById("individual_bio_1").innerText = bio_1;
+    document.getElementById("individual_bio_1").style.display = "inline-block";
+    document.getElementById("individual_bio_1_img").src="./images/stem/michael-hennessy.png";
+    document.getElementById("individual_bio_1_img").style.display = "inline-block";
+    var bio_2_name = "🏥️ Program Features";
+    var bio_2 = "• Curriculum with health care topics integrated into academic and courses: Rigorous academic preparation for career and college bound students\r\n• State-of-the-art laboratories: Vital Simulator Manikin, integrating technology with health care scenarios\r\n• Award winning faculty with health care experience and credentials\r\n• Intensive student supports such as Parent/Student workshops in college admissions\r\n• CPR Certifications & First Aid Training\r\n• Hands on clinical experience in area hospitals, medical offices, emergency medicine facilities, veterinary health care sites including the Central Florida Zoo\r\n• Career exposure through job shadow & clinical experiences";
+    document.getElementById("individual_bio_2_name").innerText = bio_2_name;
+    document.getElementById("individual_bio_2_name").style.display = "block";
+    document.getElementById("individual_bio_2").innerText = bio_2;
+    document.getElementById("individual_bio_2").style.display = "inline-block";
+    document.getElementById("individual_bio_2_img").src="./images/stem/cane.png";
+    document.getElementById("individual_bio_2_img").style.display = "inline-block";
+    var bio_3_name = "";
+    var bio_3 = "";
+    document.getElementById("individual_bio_3_name").innerText = bio_3_name;
+    document.getElementById("individual_bio_3_name").style.display = "none";
+    document.getElementById("individual_bio_3").innerText = bio_3;
+    document.getElementById("individual_bio_3").style.display = "none";
+    document.getElementById("individual_bio_3_img").src="./images/stem/cpr.png";
+    document.getElementById("individual_bio_3_img").style.display = "inline-block";
+
+    document.getElementById("individual_bio_4_img").src="./images/stem/ambulance.png";
+    document.getElementById("individual_bio_4_img").style.display = "inline-block";
+
+    document.getElementById("individual_bio_5_img").src="./images/stem/health-learning.png";
+    document.getElementById("individual_bio_5_img").style.display = "inline-block";
   }
 
   //added smooth scrolling :)
