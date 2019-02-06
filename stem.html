@@ -137,6 +137,14 @@ li {
   background: #e4e4e4;
 }
 
+#individual_bio_1_img_mobile {
+  display: none;
+  display: inline-block;
+  border-radius: 2vh;
+  padding: 1.5vh;
+  background: #e4e4e4;
+}
+
 #individual_bio_2 {
   display: none;
   display: inline-block;
@@ -146,6 +154,14 @@ li {
 }
 
 #individual_bio_2_img {
+  display: none;
+  display: inline-block;
+  border-radius: 2vh;
+  padding: 1.5vh;
+  background: #e4e4e4;
+}
+
+#individual_bio_2_img_mobile {
   display: none;
   display: inline-block;
   border-radius: 2vh;
@@ -169,6 +185,14 @@ li {
   background: #e4e4e4;
 }
 
+#individual_bio_3_img_mobile {
+  display: none;
+  display: inline-block;
+  border-radius: 2vh;
+  padding: 1.5vh;
+  background: #e4e4e4;
+}
+
 #individual_bio_4_img {
   display: none;
   display: inline-block;
@@ -177,7 +201,23 @@ li {
   background: #e4e4e4;
 }
 
+#individual_bio_4_img_mobile {
+  display: none;
+  display: inline-block;
+  border-radius: 2vh;
+  padding: 1.5vh;
+  background: #e4e4e4;
+}
+
 #individual_bio_5_img {
+  display: none;
+  display: inline-block;
+  border-radius: 2vh;
+  padding: 1.5vh;
+  background: #e4e4e4;
+}
+
+#individual_bio_5_img_mobile {
   display: none;
   display: inline-block;
   border-radius: 2vh;
@@ -400,7 +440,7 @@ li {
             <img id="individual_bio_1_img" align="center" style="margin: 0" class="roundimg_sm" src="./images/stem/curriculum.png" width="50%">          
           </nav>
           <nav class="show-mobile" align="center">
-            <img id="individual_bio_1_img" align="center" style="margin: 0" class="roundimg_sm" src="./images/stem/curriculum.png" width="100%">             
+            <img id="individual_bio_1_img_mobile" align="center" style="margin: 0" class="roundimg_sm" src="./images/stem/curriculum.png" width="100%">             
           </nav>
 
           <h2 id="individual_bio_2_name" align="center">📒 IB Coordinator</h2>
@@ -411,7 +451,7 @@ li {
             <img id="individual_bio_2_img" align="center" style="margin: 0" class="roundimg_sm" src="./images/stem/carson-stone.png" width="50%">          
           </nav>
           <nav class="show-mobile" align="center">
-            <img id="individual_bio_2_img" align="center" style="margin: 0" class="roundimg_sm" src="./images/stem/carson-stone.png" width="100%">             
+            <img id="individual_bio_2_img_mobile" align="center" style="margin: 0" class="roundimg_sm" src="./images/stem/carson-stone.png" width="100%">             
           </nav>
 
           <h2 id="individual_bio_3_name" align="center"></h2>
@@ -424,9 +464,9 @@ li {
             <img id="individual_bio_5_img" align="center" style="margin: 1vh auto" class="roundimg_sm" src="./images/stem/student-presentations.png" width="45%">          
           </nav>
           <nav class="show-mobile" align="center">
-            <img id="individual_bio_3_img" align="center" style="margin: 0" class="roundimg_sm" src="./images/stem/ib-community.png" width="100%">             
-            <img id="individual_bio_4_img" align="center" style="margin: 0" class="roundimg_sm" src="./images/stem/biology-lab.png" width="100%">             
-            <img id="individual_bio_5_img" align="center" style="margin: 0" class="roundimg_sm" src="./images/stem/student-presentations.png" width="100%">             
+            <img id="individual_bio_3_img_mobile" align="center" style="margin: 0" class="roundimg_sm" src="./images/stem/ib-community.png" width="100%">             
+            <img id="individual_bio_4_img_mobile" align="center" style="margin: 0" class="roundimg_sm" src="./images/stem/biology-lab.png" width="100%">             
+            <img id="individual_bio_5_img_mobile" align="center" style="margin: 0" class="roundimg_sm" src="./images/stem/student-presentations.png" width="100%">             
           </nav>
 
         </div>
@@ -520,6 +560,9 @@ li {
     document.getElementById("individual_bio_1").style.display = "inline-block";
     document.getElementById("individual_bio_1_img").src="./images/stem/curriculum.png";
     document.getElementById("individual_bio_1_img").style.display = "inline-block";
+    document.getElementById("individual_bio_1_img_mobile").src="./images/stem/curriculum.png";
+    document.getElementById("individual_bio_1_img_mobile").style.display = "inline-block";
+
     var bio_2_name = "📒 IB Coordinator";
     var bio_2 = "Mr. Carson Stone’s responsibilities include co-managing IB Juniors’ CAS, a component of the IB diploma that requires students to complete creativity, action, and service, registering IB students for Standard Level and Higher Level exams, and meeting with current and potential IB students and parents.";
     document.getElementById("individual_bio_2_name").innerText = bio_2_name;
@@ -528,6 +571,9 @@ li {
     document.getElementById("individual_bio_2").style.display = "inline-block";
     document.getElementById("individual_bio_2_img").src="./images/stem/carson-stone.png";
     document.getElementById("individual_bio_2_img").style.display = "inline-block";
+    document.getElementById("individual_bio_2_img_mobile").src="./images/stem/carson-stone.png";
+    document.getElementById("individual_bio_2_img_mobile").style.display = "inline-block";
+
     var bio_3_name = "";
     var bio_3 = "";
     document.getElementById("individual_bio_3_name").innerText = bio_3_name;
@@ -536,12 +582,18 @@ li {
     document.getElementById("individual_bio_3").style.display = "none";
     document.getElementById("individual_bio_3_img").src="./images/stem/ib-community.png";
     document.getElementById("individual_bio_3_img").style.display = "inline-block";
+    document.getElementById("individual_bio_3_img_mobile").src="./images/stem/ib-community.png";
+    document.getElementById("individual_bio_3_img_mobile").style.display = "inline-block";
 
     document.getElementById("individual_bio_4_img").src="./images/stem/biology-lab.png";
     document.getElementById("individual_bio_4_img").style.display = "inline-block";
+    document.getElementById("individual_bio_4_img_mobile").src="./images/stem/biology-lab.png";
+    document.getElementById("individual_bio_4_img_mobile").style.display = "inline-block";
 
     document.getElementById("individual_bio_5_img").src="./images/stem/student-presentations.png";
     document.getElementById("individual_bio_5_img").style.display = "inline-block";
+    document.getElementById("individual_bio_5_img_mobile").src="./images/stem/student-presentations.png";
+    document.getElementById("individual_bio_5_img_mobile").style.display = "inline-block";
   }
 
   function health_academy()
@@ -564,6 +616,9 @@ li {
     document.getElementById("individual_bio_1").style.display = "inline-block";
     document.getElementById("individual_bio_1_img").src="./images/stem/michael-hennessy.png";
     document.getElementById("individual_bio_1_img").style.display = "inline-block";
+    document.getElementById("individual_bio_1_img_mobile").src="./images/stem/michael-hennessy.png";
+    document.getElementById("individual_bio_1_img_mobile").style.display = "inline-block";
+
     var bio_2_name = "🏥️ Program Features";
     var bio_2 = "• Curriculum with health care topics integrated into academic and courses: Rigorous academic preparation for career and college bound students\r\n• State-of-the-art laboratories: Vital Simulator Manikin, integrating technology with health care scenarios\r\n• Award winning faculty with health care experience and credentials\r\n• Intensive student supports such as Parent/Student workshops in college admissions\r\n• CPR Certifications & First Aid Training\r\n• Hands on clinical experience in area hospitals, medical offices, emergency medicine facilities, veterinary health care sites including the Central Florida Zoo\r\n• Career exposure through job shadow & clinical experiences";
     document.getElementById("individual_bio_2_name").innerText = bio_2_name;
@@ -572,6 +627,8 @@ li {
     document.getElementById("individual_bio_2").style.display = "inline-block";
     document.getElementById("individual_bio_2_img").src="./images/stem/cane.png";
     document.getElementById("individual_bio_2_img").style.display = "inline-block";
+    document.getElementById("individual_bio_2_img_mobile").src="./images/stem/cane.png";
+    document.getElementById("individual_bio_2_img_mobile").style.display = "inline-block";
     var bio_3_name = "";
     var bio_3 = "";
     document.getElementById("individual_bio_3_name").innerText = bio_3_name;
@@ -580,12 +637,18 @@ li {
     document.getElementById("individual_bio_3").style.display = "none";
     document.getElementById("individual_bio_3_img").src="./images/stem/cpr.png";
     document.getElementById("individual_bio_3_img").style.display = "inline-block";
+    document.getElementById("individual_bio_3_img_mobile").src="./images/stem/cpr.png";
+    document.getElementById("individual_bio_3_img_mobile").style.display = "inline-block";
 
     document.getElementById("individual_bio_4_img").src="./images/stem/ambulance.png";
     document.getElementById("individual_bio_4_img").style.display = "inline-block";
+    document.getElementById("individual_bio_4_img_mobile").src="./images/stem/ambulance.png";
+    document.getElementById("individual_bio_4_img_mobile").style.display = "inline-block";
 
     document.getElementById("individual_bio_5_img").src="./images/stem/health-learning.png";
     document.getElementById("individual_bio_5_img").style.display = "inline-block";
+    document.getElementById("individual_bio_5_img_mobile").src="./images/stem/health-learning.png";
+    document.getElementById("individual_bio_5_img_mobile").style.display = "inline-block";
   }
 
   function mass_media()
@@ -608,6 +671,9 @@ li {
     document.getElementById("individual_bio_1").style.display = "inline-block";
     document.getElementById("individual_bio_1_img").src="./images/stem/veronica-sarmiento.png";
     document.getElementById("individual_bio_1_img").style.display = "inline-block";
+    document.getElementById("individual_bio_1_img_mobile").src="./images/stem/veronica-sarmiento.png";
+    document.getElementById("individual_bio_1_img_mobile").style.display = "inline-block";
+
     var bio_2_name = "Renee Dubber 👨‍🏫";
     var bio_2 = "Renee is a national Board Certified teacher who has been teaching in the Florida Public School System for the past 17 years working primarily with Title 1 schools and at risk youth. Prior to teaching she worked in corporate marketing and has continued to do contract work for various businesses while teaching. She is a certified Microsoft Office Specialist and brings a great deal of technology experience to the program. Her extensive work with at risk youth, combined with her teaching experience and numerous certifications, make her an asset to the Mass Media CAPE Academy.";
     document.getElementById("individual_bio_2_name").innerText = bio_2_name;
@@ -616,6 +682,9 @@ li {
     document.getElementById("individual_bio_2").style.display = "inline-block";
     document.getElementById("individual_bio_2_img").src="./images/stem/renee-dubber.png";
     document.getElementById("individual_bio_2_img").style.display = "inline-block";
+    document.getElementById("individual_bio_2_img_mobile").src="./images/stem/renee-dubber.png";
+    document.getElementById("individual_bio_2_img_mobile").style.display = "inline-block";
+
     var bio_3_name = "📧 Kevin Kelley";
     var bio_3 = "Kevin is a professional musician who brings a great deal of experience with graphics and print media to the team, he owned a direct mail marketing company and has a vast amount of technology experience with web design, graphics and programming. His varied experience in the arts and business, as well as teaching experience, is an asset to the program.";
     document.getElementById("individual_bio_3_name").innerText = bio_3_name;
@@ -624,12 +693,18 @@ li {
     document.getElementById("individual_bio_3").style.display = "inline-block";
     document.getElementById("individual_bio_3_img").src="./images/stem/kevin-kelley.png";
     document.getElementById("individual_bio_3_img").style.display = "inline-block";
+    document.getElementById("individual_bio_3_img_mobile").src="./images/stem/kevin-kelley.png";
+    document.getElementById("individual_bio_3_img_mobile").style.display = "inline-block";
 
     document.getElementById("individual_bio_4_img").src="./images/stem/mike-smith.png";
     document.getElementById("individual_bio_4_img").style.display = "none";
+    document.getElementById("individual_bio_4_img_mobile").src="./images/stem/mike-smith.png";
+    document.getElementById("individual_bio_4_img_mobile").style.display = "none";
 
     document.getElementById("individual_bio_5_img").src="./images/stem/ginger-schmaus.png";
     document.getElementById("individual_bio_5_img").style.display = "none";
+    document.getElementById("individual_bio_5_img_mobile").src="./images/stem/ginger-schmaus.png";
+    document.getElementById("individual_bio_5_img_mobile").style.display = "none";
   }
 
   function advanced_placement()
@@ -652,6 +727,9 @@ li {
     document.getElementById("individual_bio_1").style.display = "inline-block";
     document.getElementById("individual_bio_1_img").src="./images/stem/tutoring-use.png";
     document.getElementById("individual_bio_1_img").style.display = "inline-block";
+    document.getElementById("individual_bio_1_img_mobile").src="./images/stem/tutoring-use.png";
+    document.getElementById("individual_bio_1_img_mobile").style.display = "inline-block";
+
     var bio_2_name = "";
     var bio_2 = "";
     document.getElementById("individual_bio_2_name").innerText = bio_2_name;
@@ -660,6 +738,9 @@ li {
     document.getElementById("individual_bio_2").style.display = "none";
     document.getElementById("individual_bio_2_img").src="./images/stem/laptop-use.jpg";
     document.getElementById("individual_bio_2_img").style.display = "none";
+    document.getElementById("individual_bio_2_img_mobile").src="./images/stem/laptop-use.jpg";
+    document.getElementById("individual_bio_2_img_mobile").style.display = "none";
+
     var bio_3_name = "";
     var bio_3 = "";
     document.getElementById("individual_bio_3_name").innerText = bio_3_name;
@@ -668,12 +749,18 @@ li {
     document.getElementById("individual_bio_3").style.display = "none";
     document.getElementById("individual_bio_3_img").src="./images/stem/class.png";
     document.getElementById("individual_bio_3_img").style.display = "inline-block";
+    document.getElementById("individual_bio_3_img_mobile").src="./images/stem/class.png";
+    document.getElementById("individual_bio_3_img_mobile").style.display = "inline-block";
 
     document.getElementById("individual_bio_4_img").src="./images/stem/presentating.png";
     document.getElementById("individual_bio_4_img").style.display = "inline-block";
+    document.getElementById("individual_bio_4_img_mobile").src="./images/stem/presentating.png";
+    document.getElementById("individual_bio_4_img_mobile").style.display = "inline-block";
 
     document.getElementById("individual_bio_5_img").src="./images/stem/mack.png";
     document.getElementById("individual_bio_5_img").style.display = "inline-block";
+    document.getElementById("individual_bio_5_img_mobile").src="./images/stem/mack.png";
+    document.getElementById("individual_bio_5_img_mobile").style.display = "inline-block";
   }
   
   function extracurriculars()
@@ -696,6 +783,9 @@ li {
     document.getElementById("individual_bio_1").style.display = "inline-block";
     document.getElementById("individual_bio_1_img").src="./images/stem/snhs-shirts.jpg";
     document.getElementById("individual_bio_1_img").style.display = "inline-block";
+    document.getElementById("individual_bio_1_img_mobile").src="./images/stem/snhs-shirts.jpg";
+    document.getElementById("individual_bio_1_img_mobile").style.display = "inline-block";
+
     var bio_2_name = "Girls Who Code 💻";
     var bio_2 = "Kevin Strileckis:\r\nGirls Who Code is a nonprofit organization which aims to support and increase the number of women in computer science. The organization is working to close the gender gap in technology and change the image of what a programmer looks like and does. Club girls join a safe and supportive environment of peers & role models and learn to see themselves as computer scientists. Beyond the Club, girls can tap into an alumni network of tens of thousands of girls across the country who are using computer science to solve problems they care about. Club girls learn the concepts of loops, variables, conditionals, and functions that form the basis for all programming languages — whether they want to build a website, an app, or a robot. Club girls work in teams to design and build a Computer Science “CS” Impact Project that solves real world problems they care about through code.";
     document.getElementById("individual_bio_2_name").innerText = bio_2_name;
@@ -704,6 +794,9 @@ li {
     document.getElementById("individual_bio_2").style.display = "inline-block";
     document.getElementById("individual_bio_2_img").src="./images/stem/ghc-board.jpg";
     document.getElementById("individual_bio_2_img").style.display = "inline-block";
+    document.getElementById("individual_bio_2_img_mobile").src="./images/stem/ghc-board.jpg";
+    document.getElementById("individual_bio_2_img_mobile").style.display = "inline-block";
+
     var bio_3_name = "📏 Mu Alpha Theta";
     var bio_3 = "Trung Vong:\r\nMu Alpha Theta, the National High School and Two-Year College Mathematics Honor Society, was formed in 1957 at the University of Oklahoma. It is dedicated to inspiring a keen interest in mathematics, developing strong scholarship in the subject, and promoting the enjoyment of mathematics in high school and two-year college students. As of June 2017, more than 110,000 students are Mu Alpha Theta members at more than 2,400 schools in the United States and in 20 foreign countries. Each affiliate of MAƟ participates in one of four subjects: Algebra 2, Precalculus, Statistics, and Calculus. Typically, ninth graders compete in Algebra 2, tenth graders compete in Precalculus, and eleventh and twelfth graders compete in Statistics or Calculus.";
     document.getElementById("individual_bio_3_name").innerText = bio_3_name;
@@ -712,12 +805,18 @@ li {
     document.getElementById("individual_bio_3").style.display = "inline-block";
     document.getElementById("individual_bio_3_img").src="./images/stem/redwin.jpg";
     document.getElementById("individual_bio_3_img").style.display = "inline-block";
+    document.getElementById("individual_bio_3_img_mobile").src="./images/stem/redwin.jpg";
+    document.getElementById("individual_bio_3_img_mobile").style.display = "inline-block";
 
     document.getElementById("individual_bio_4_img").src="./images/stem/mao-orange.jpg";
     document.getElementById("individual_bio_4_img").style.display = "inline-block";
+    document.getElementById("individual_bio_4_img_mobile").src="./images/stem/mao-orange.jpg";
+    document.getElementById("individual_bio_4_img_mobile").style.display = "inline-block";
 
     document.getElementById("individual_bio_5_img").src="./images/stem/mao-black.jpg";
     document.getElementById("individual_bio_5_img").style.display = "inline-block";
+    document.getElementById("individual_bio_5_img_mobile").src="./images/stem/mao-black.jpg";
+    document.getElementById("individual_bio_5_img_mobile").style.display = "inline-block";
   }
 
   //added smooth scrolling :)
