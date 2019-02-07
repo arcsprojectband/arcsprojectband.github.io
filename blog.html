@@ -84,9 +84,9 @@ a {
 }
 
 .column {
-  -ms-flex: 25%;
-  flex: 25%;
-  max-width: 25%;
+  -ms-flex: 33.33%;
+  flex: 33.33%;
+  max-width: 33.33%;
   padding: 0 0.5vh;
 }
 
@@ -95,7 +95,15 @@ a {
   vertical-align: middle;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 1705px) {
+  .column {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+  }
+}
+
+@media screen and (max-width: 1375px) {
   .column {
     -ms-flex: 50%;
     flex: 50%;
@@ -103,7 +111,7 @@ a {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 950px) {
   .column {
     -ms-flex: 100%;
     flex: 100%;
